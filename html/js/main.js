@@ -4,6 +4,16 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.
 	ua
 );
 
+function scrollPopUp() {
+	if ($('.boxScroll').length) {
+		$('.boxScroll').niceScroll({
+			horizrailenabled: false,
+			autohidemode: false,
+			cursorwidth: "10px",
+			cursorcolor: "#e3e4e5",
+		});
+	}
+}
 
 function inputHolder() {
 	$('.filter-price input').focus(function (e) {
@@ -231,10 +241,14 @@ function starPage() {
 
 	ImgLazyLoad();
 
+	setTimeout(function () {
+		scrollPopUp();
+	}, 100);
+
 	if (loading) {
 		loading = false;
 
-		$('.fs-loading').fadeOut(100, function () {
+		$('.fs-loading').fadeOut(550, function () {
 			var page = $('body').attr('data-page');
 			$('.fs-navigation li[data-nav=' + page + ']').addClass('active');
 
