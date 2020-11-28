@@ -109,10 +109,7 @@ html, body{
 	font-style:normal;
 }
 
-.fs-banner h1, .fs-banner h2, .fs-banner h3, .fs-banner .small-title {
-	font-style:normal;
-	font-weight:300;
-}
+
 .item-top a, .fs-group input[type='text'], 
 .fs-group input[type='password'], 
 .fs-group textarea{

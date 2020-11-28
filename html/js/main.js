@@ -139,6 +139,43 @@ function fsSlider() {
 			}
 		});
 	}
+	
+	if ($('.slider-inr').length) {
+		// var loop = true;
+		// if ($('.fs-banner .item-slide').length < 2) {
+		// 	$('.fs-banner').addClass('hide-controls');
+		// 	loop = false;
+		// }
+		new Swiper('.slider-box', {
+			effect: 'slide',
+			loop: true,
+			speed: 800,
+			watchOverflow: true,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+			on: {
+				init: function () {
+				}, transitionStart: function () {
+				}, transitionEnd: function () {
+				}
+			},
+			// navigation: {
+			// 	nextEl: '.fs-banner .swiper-button-next',
+			// 	prevEl: '.fs-banner .swiper-button-prev',
+			// },
+			pagination: {
+				el: '.slider-prd .swiper-pagination',
+				clickable: true,
+			},
+			a11y: {
+				enabled: false
+			}
+		});
+	}
 
 }
 
@@ -197,18 +234,13 @@ function starPage() {
 	if (loading) {
 		loading = false;
 
-		setTimeout(function () {
-			ImgLazyLoad();
-		}, 100);
-
-		$('.fs-loading').fadeOut(500, function () {
+		$('.fs-loading').fadeOut(100, function () {
 			var page = $('body').attr('data-page');
 			$('.fs-navigation li[data-nav=' + page + ']').addClass('active');
 
 			fsSlider();
 
 			fsEvent();
-			DatePicker();
 
 			isCroll = true;
 		});
@@ -228,14 +260,9 @@ function onScroll() {
 
 	scrollPos = $(window).scrollTop();
 	setTimeout(function () {
-		// if (isCroll) {
-		// 	if (scrollPos >= window.innerHeight / 2) {
-		// 		$('.fs-header').addClass('fixed');
-		// 	} else {
-		// 		$('.fs-header').removeClass('fixed');
-		// 	}
-		// 	ImgLazyLoad();
-		// }
+		if (isCroll) {
+			ImgLazyLoad();
+		}
 	}, 0);  // Process for Input Delay
 
 }

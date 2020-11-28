@@ -94,6 +94,7 @@ sup{
 	height:auto;
 }
 .fs-page{
+	width: 100%;
 	overflow:hidden;
 }
 
@@ -160,7 +161,7 @@ sup{
 	height:4rem;
 	padding:0 1.5rem;
 	line-height:3.8rem;
-	border:1px solid #cbcbcb;
+	background-color: #fff;
 	-webkit-border-radius:4px;
 	border-radius:4px;
 	cursor:pointer;
@@ -179,7 +180,7 @@ sup{
 	top:50%;
 	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
-	font-size:1.3rem;
+	font-size:1.5rem;
 	max-width:100%;
 	white-space:nowrap;
 	text-overflow:ellipsis;
@@ -187,14 +188,15 @@ sup{
 	color:#000;
 }
 .fs-select-header::after{
-	content:'';
-	position:absolute;
-	right:1rem;
-	top:1.5rem;
-	width:1rem;
-	height:0.7rem;
-	background:url(../images/icon-arrow-down.png) no-repeat center center;
-	background-size:100% auto;
+	content: '';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 1.3rem;
+    height: 1rem;
+    background: url(../images/icon-dropdow.png) no-repeat center center;
+    background-size: 100% auto;
+    transform: translateY(-50%);
 }
 .fs-select-box{
 	position:absolute;
@@ -203,7 +205,7 @@ sup{
 	display:block;
 	width:100%;
 	height:auto;
-	min-width:160px;
+	min-width:100%;
 	margin-top:0.5rem;
 	visibility:hidden;
 	opacity:0;
@@ -237,9 +239,9 @@ sup{
 	-webkit-transition:all 0.3s ease-in-out;
 	transition:all 0.3s ease-in-out;
 }
-.fs-open-select .fs-select-header{
+/* .fs-open-select .fs-select-header{
 	border:1px solid #5fc3b2;
-}
+} */
 
 
 .fs-open-select .fs-select-box{
@@ -347,11 +349,11 @@ sup{
 }
 .header-inr{
 	position:relative;
-	width: 72.3958vw;
+	width: 100%;
+	max-width: 139rem;
 	margin: 0 auto;
 	text-align:right;
 	font-size:0;
-	padding: 0.71942vw 3.125vw;
 	background-color: #fff;
 	border: 1px solid rgb(146, 148, 151);
 }
@@ -361,12 +363,13 @@ sup{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding: 1.0791% 3.5%;
 	align-items: center;
 }
 .logo{
 	position: relative;
-	flex: 0 0 16.09375vw;
-    width: 16.09375vw;
+	flex: 0 0 21.5827%;
+    width: 21.5827%;
 	height:auto;
 	z-index: 1;
 }
@@ -377,8 +380,8 @@ sup{
 .fs-nav{
 	position: relative;
 	display: block;
-	flex: 0 0 19vw;
-	max-width: 19vw;
+	flex: 0 0 28%;
+	max-width: 28%;
 }
 .nav-inr{
 	position: relative;
@@ -392,16 +395,19 @@ sup{
 }
 .item-nav{
 	position: relative;
-	width: auto;
-	margin-left: -1vw;
+    display: inline-block;
+    width: auto;
+}
+.item-nav:first-child{
+	margin-left: 0;
 }
 .item-nav p, .item-nav p a{
 	text-align: center;
-	font-size: 1.0416vw;
+	font-size: 1.8rem;
 	color: #006E00;
 }
 .item-nav .tel{
-	font-size: 1.5625vw;
+	font-size: 2.7rem;
 	color: #FF8200;
 }
 
@@ -423,7 +429,7 @@ sup{
 }
 
 /*Banner*/
-.swiper-pagination, .swiper-button-next, .swiper-button-prev{
+/* .swiper-pagination, .swiper-button-next, .swiper-button-prev{
 	display:none
 }
 .show-controls .swiper-button-next, .show-controls .swiper-button-prev, .show-controls .swiper-pagination{
@@ -441,7 +447,7 @@ sup{
 .fs-banner .swiper-pagination{
 	width:100%;
 	bottom:1.5rem;
-}
+} */
 
 
 /*FORM*/
@@ -476,9 +482,9 @@ sup{
 	width:100%;
 	height:4rem;
 	line-height:4rem;
-	font-size:1.3rem;
-	border:1px solid #cbcbcb;
+	font-size:1.5rem;
 	padding:0 1.5rem;
+	background-color: #fff;
 	-webkit-border-radius:5px;
 	border-radius:5px;
 	color:#000;
@@ -545,14 +551,15 @@ sup{
 }
 
 .fs-but{
-	width:100%;
-	height:4rem;
-	background-color:#f04a25;
-	color:#fff;
-	-webkit-border-radius:4px;
-	border-radius:4px;
-	cursor:pointer;
-	font-size:1.4rem;
+	width: 100%;
+	height: 4.5rem;
+	background: -webkit-linear-gradient(90deg, rgba(255,163,0,1) 0%, rgba(255,123,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255,163,0,1) 0%, rgba(255,123,0,1) 100%);
+    color: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.8rem;
 }
 
 
@@ -564,20 +571,21 @@ sup{
 .footer-inr {
 	position:relative;
 	display: block;
-	width: 72.3958vw;
+	width: 100%;
+	max-width: 139rem;
 	margin: 0 auto;
 }
 .footer-top{
 	position: relative;
 	display: block;
 	width: 100%;
-	padding: 2.0833vw 2.3958vw;
+	padding: 2.8776% 2.34375%;
 	background-color: #375736;
 }
 .footer-top p{
 	color: #fff;
-	font-size: 0.9375vw;
-	margin-bottom: 0.15625vw;
+	font-size: 1.8rem;
+	margin-bottom: 0.3rem;
 }
 .footer-bot{
 	position: relative;
@@ -586,9 +594,9 @@ sup{
 }
 .fs-logo-ft{
 	position: absolute;
-	top: 11.6666vw;
-	left: 2vw;
-	width: 23.6458vw;
+    top: 55%;
+    left: 2%;
+	width: 34.6762%;
 }
 .fs-logo-ft img{
 	width: 100%;
@@ -600,7 +608,8 @@ sup{
 	padding: 0.52083vw 5%;
 }
 .fs-social p{
-	margin-bottom: 0.260416vw;
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
 }
 .fs-social ul{
 	font-size: 0;
@@ -609,8 +618,8 @@ sup{
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 0.260416vw;
-	width: 1.5625vw;
+	margin-right: 0.5rem;
+	width: 3rem;
 }
 .fs-social li a{
 	display: block;
@@ -713,19 +722,19 @@ sup{
   }
   .swiper-pagination-bullet {
 	position:relative;
-	width:1.6rem;
-	height:1.6rem;
+	width:1.1rem;
+	height:1.1rem;
 	display:inline-block;
-	margin:0 1.1rem;
-	opacity:1;
+    margin:0 0.5rem;
+	opacity:0.5;
   }
   .swiper-pagination-bullet::before{
 	content:'';
 	position:absolute;
-	left:3px;
-	top:3px;
-	width:1rem;
-	height:1rem;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
 	background-color:#fff;
 	-webkit-border-radius:50%;
 	border-radius:50%;
@@ -733,8 +742,11 @@ sup{
   .swiper-pagination-clickable .swiper-pagination-bullet {
     cursor:pointer;
   }
+  .swiper-pagination-bullet-active{
+	  opacity: 1;
+  }
   .swiper-pagination-bullet-active::before {
-		background-color:#ed3523;
+		background-color:#fff;
   }
   .swiper-container-fade .swiper-slide {
     pointer-events:none;
@@ -749,6 +761,37 @@ sup{
   .swiper-container-fade .swiper-slide-active .swiper-slide-active {
     pointer-events:auto;
   }
+
+@media screen and (max-width: 1389px){
+	/* Header */
+	.header-inr {
+		max-width: 110rem;
+	}
+	.item-nav p, .item-nav p a {
+		font-size: 1.4rem;
+	}
+	.item-nav .tel {
+		font-size: 2.3rem;
+	}
+
+	/* Button */
+	.fs-but {
+		font-size: 1.4rem;
+		height: 3.8rem;
+	}
+
+	/* Select */
+	.fs-select-header::after {
+		width: 1rem;
+		height: 0.7rem;
+	}
+
+
+	/* Footer */
+	.footer-top p, .fs-social p {
+		font-size: 1.6rem;
+	}
+}
 
 
 /*RESPONSIVE*/
