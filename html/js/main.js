@@ -245,6 +245,13 @@ function starPage() {
 		scrollPopUp();
 	}, 100);
 
+	if ($('.item-rank-top').length) {
+		$('.item-rank-top .txt-prize').show().arctext({
+			radius: 500,
+			dir: -1,
+		});
+	}
+
 	if (loading) {
 		loading = false;
 
@@ -287,7 +294,15 @@ function Resize() {
 	// Need detect not mobile when resize because in mobile scrolling call resize
 	if (!isMobile) {
 		if (isCroll) {
-			ImgLazyLoad();
+			setTimeout(function(){
+				ImgLazyLoad();
+				if ($('.item-rank-top').length) {
+					$('.item-rank-top .txt-prize').show().arctext({
+						radius: 500,
+						dir: -1,
+					});
+				}
+			},100)
 		}
 	}
 

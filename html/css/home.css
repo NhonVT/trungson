@@ -501,6 +501,14 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.item-rank-top .txt-prize{
+    position: absolute;
+    bottom: 8%;
+    left: 18%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #96610c;
+}
 .box-list-rank{
     position: relative;
     display: flex;
@@ -756,6 +764,10 @@
     .rank-outer .small-title, .tnc-inr .small-title {
         font-size: 2rem;
     }
+    .item-rank-top .txt-prize{
+        left: 18.8%;
+        font-size: 0.9rem;
+    }
     .list-but-inr .item-but .fs-but {
         border: 1px solid #ffd3a2;
         font-size: 1.4rem;
@@ -767,4 +779,5 @@
     .content-tnc {
         max-height: 33rem;
     }
+
 }
