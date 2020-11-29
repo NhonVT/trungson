@@ -792,6 +792,9 @@ sup{
 
 
 	/* Footer */
+	.footer-inr {
+		max-width: 110rem;
+	}
 	.footer-top p, .fs-social p {
 		font-size: 1.6rem;
 	}
