@@ -58,26 +58,31 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="fs-pic">
-                                        <img class="cmPic fs-lazy"
+                                        <img class="fs-pc pcPic fs-lazy"
                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                             data-src="images/banner.jpg" alt="Mừng sinh nhật rộn ràng">
+                                        <img class="fs-sp spPic fs-lazy"
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            data-src="images/banner-sp.jpg" alt="Mừng sinh nhật rộn ràng">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="fs-pic">
-                                        <img class="cmPic fs-lazy"
+                                        <img class="fs-pc pcPic fs-lazy"
                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                             data-src="images/banner.jpg" alt="Mừng sinh nhật rộn ràng">
+                                            <img class="fs-sp spPic fs-lazy"
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            data-src="images/banner-sp.jpg" alt="Mừng sinh nhật rộn ràng">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-
-                    <div class="box-form">
-                        <!-- add class is-form vào form-inr nếu nhập xong ô input nhập mã hoá đơn -->
-                       <div class="form-inr is-form">
+                    <!-- add class is-form vào form-inr nếu nhập xong ô input nhập mã hoá đơn -->
+                    <div class="box-form is-form">
+                       <div class="form-inr">
                            <div class="box-input-code">
                                <h2>NHẬP THÔNG TIN & RINH QUÀ NGAY NÀO</h2>
                                <div class="fs-form">
@@ -215,7 +220,8 @@
                 <div class="fs-inr text-list-inr">
                     <div class="fs-box">
                         <div class="fs-txt">
-                            <p>Danh sách khách hàng trúng thưởng theo ngày <span class="open-popup" data-href="popup-list-customer.html"> >> Click xem ngay</span> </p>
+                            <p>Danh sách khách hàng trúng thưởng theo ngày <br class="fs-sp">
+                                <span class="open-popup" data-href="popup-list-customer.html"> >> Click xem ngay</span> </p>
                         </div>
                     </div>
                 </div>
@@ -225,176 +231,234 @@
                     <div class="fs-bg">
                         <div class="cmBg fs-lazy" data-src="images/bg-rank.jpg"></div>
                     </div>
-                    <div class="box-rank">
-                        <div class="rank-outer">
-                            <div class="small-title">DANH SÁCH KHÁCH HÀNG <span>TRÚNG THƯỞNG - TUẦN 1</span></div>
-                            <div class="rank-outer-inr">
-                                <div class="box-rank-top">
-                                    <div class="item-rank-top">
-                                        <div class="outer-pic">
-                                            <div class="fs-pic">
-                                                <img class="cmPic fs-lazy"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                    data-src="images/avarta.png" alt="logo">
+                    <div class="fs-box">
+                        <div class="box-rank">
+                            <!-- Nếu chưa có thì add class has-empty vào rank-outer-->
+                            <div class="rank-outer">
+                                <div class="small-title">DANH SÁCH KHÁCH HÀNG 
+                                    <br class="fs-sp"><span>TRÚNG THƯỞNG - TUẦN 1</span></div>
+                                <div class="rank-outer-inr">
+                                    <div class="box-rank-top">
+                                        <div class="item-rank-top">
+                                            <div class="outer-pic">
+                                                <div class="fs-pic">
+                                                    <img class="cmPic fs-lazy"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/avarta.png" alt="logo">
+                                                </div>
+                                                <div class="txt-prize">TRÚNG IPAD PRO 11 - WIFI 2020</div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="box-list-rank">
+                                        <div class="item-rank">
+                                            <div class="box-avt">
+                                                <div class="avt-inr">
+                                                    <div class="fs-pic">
+                                                        <img class="cmPic fs-lazy"
+                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                            data-src="images/avarta.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-prize">
+                                                <div class="fs-pic">
+                                                    <img class="cmPic fs-lazy"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/button-rank.png" alt="logo">
+                                                </div>
+                                                <div class="text-prize">1 chỉ vàng SJC 999</div>
                                             </div>
                                         </div>
-                                        <div class="txt-prize">TRÚNG IPAD PRO 11 - WIFI 2020</div>
+                                        <div class="item-rank">
+                                            <div class="box-avt">
+                                                <div class="avt-inr">
+                                                    <div class="fs-pic">
+                                                        <img class="cmPic fs-lazy"
+                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                            data-src="images/avarta.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-prize">
+                                                <div class="fs-pic">
+                                                    <img class="cmPic fs-lazy"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/button-rank.png" alt="logo">
+                                                </div>
+                                                <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-rank">
+                                            <div class="box-avt">
+                                                <div class="avt-inr">
+                                                    <div class="fs-pic">
+                                                        <img class="cmPic fs-lazy"
+                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                            data-src="images/avarta.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-prize">
+                                                <div class="fs-pic">
+                                                    <img class="cmPic fs-lazy"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/button-rank.png" alt="logo">
+                                                </div>
+                                                <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-rank">
+                                            <div class="box-avt">
+                                                <div class="avt-inr">
+                                                    <div class="fs-pic">
+                                                        <img class="cmPic fs-lazy"
+                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                            data-src="images/avarta.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-prize">
+                                                <div class="fs-pic">
+                                                    <img class="cmPic fs-lazy"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/button-rank.png" alt="logo">
+                                                </div>
+                                                <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-rank">
+                                            <div class="box-avt">
+                                                <div class="avt-inr">
+                                                    <div class="fs-pic">
+                                                        <img class="cmPic fs-lazy"
+                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                            data-src="images/avarta.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-prize">
+                                                <div class="fs-pic">
+                                                    <img class="cmPic fs-lazy"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/button-rank.png" alt="logo">
+                                                </div>
+                                                <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-list-rank">
-                                    <div class="item-rank">
-                                        <div class="box-avt">
-                                            <div class="avt-inr">
-                                                <div class="fs-pic">
-                                                    <img class="cmPic fs-lazy"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                        data-src="images/avarta.png" alt="logo">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box-prize">
-                                            <div class="fs-pic">
-                                                <img class="cmPic fs-lazy"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                    data-src="images/button-rank.png" alt="logo">
-                                            </div>
-                                            <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                <div class="fs-box-empty">
+                                    <p>Chưa có dữ liệu tuần</p>
+                                </div>
+                            </div>
+                            <div class="list-but-week">
+                                <div class="list-but-inr">
+                                    <div class="item-but active">
+                                        <div class="fs-box-but">
+                                            <button class="fs-but">TUẦN 1</button>
                                         </div>
                                     </div>
-                                    <div class="item-rank">
-                                        <div class="box-avt">
-                                            <div class="avt-inr">
-                                                <div class="fs-pic">
-                                                    <img class="cmPic fs-lazy"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                        data-src="images/avarta.png" alt="logo">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box-prize">
-                                            <div class="fs-pic">
-                                                <img class="cmPic fs-lazy"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                    data-src="images/button-rank.png" alt="logo">
-                                            </div>
-                                            <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                    <div class="item-but">
+                                        <div class="fs-box-but">
+                                            <button class="fs-but">TUẦN 2</button>
                                         </div>
                                     </div>
-                                    <div class="item-rank">
-                                        <div class="box-avt">
-                                            <div class="avt-inr">
-                                                <div class="fs-pic">
-                                                    <img class="cmPic fs-lazy"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                        data-src="images/avarta.png" alt="logo">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box-prize">
-                                            <div class="fs-pic">
-                                                <img class="cmPic fs-lazy"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                    data-src="images/button-rank.png" alt="logo">
-                                            </div>
-                                            <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                    <div class="item-but">
+                                        <div class="fs-box-but">
+                                            <button class="fs-but">TUẦN 3</button>
                                         </div>
                                     </div>
-                                    <div class="item-rank">
-                                        <div class="box-avt">
-                                            <div class="avt-inr">
-                                                <div class="fs-pic">
-                                                    <img class="cmPic fs-lazy"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                        data-src="images/avarta.png" alt="logo">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box-prize">
-                                            <div class="fs-pic">
-                                                <img class="cmPic fs-lazy"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                    data-src="images/button-rank.png" alt="logo">
-                                            </div>
-                                            <div class="text-prize">1 chỉ vàng SJC 999</div>
-                                        </div>
-                                    </div>
-                                    <div class="item-rank">
-                                        <div class="box-avt">
-                                            <div class="avt-inr">
-                                                <div class="fs-pic">
-                                                    <img class="cmPic fs-lazy"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                        data-src="images/avarta.png" alt="logo">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box-prize">
-                                            <div class="fs-pic">
-                                                <img class="cmPic fs-lazy"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                    data-src="images/button-rank.png" alt="logo">
-                                            </div>
-                                            <div class="text-prize">1 chỉ vàng SJC 999</div>
+                                    <div class="item-but">
+                                        <div class="fs-box-but">
+                                            <button class="fs-but">TUẦN 4</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="list-but-week">
-                            <div class="list-but-inr">
-                                <div class="item-but active">
-                                    <div class="fs-box-but">
-                                        <button class="fs-but">TUẦN 1</button>
+                        <div class="box-tnc">
+                            <div class="tnc-inr">
+                                <div class="small-title">THỂ LỆ CHƯƠNG TRÌNH</div>
+                                <div class="box-scroll-tnc">
+                                    <div class="content-tnc">
+                                        <p>1. Tên chương trình khuyến mãi: <strong>SINH NHẬT RỘN RÀNG, SĂN IPHONE TRÚNG VÀNG</strong></p>
+                                        <p>2. Thời gian diễn ra: 05/12/2020 - 31/12/2020</p>
+                                        <p>3. Đối tượng áp dụng: Tất cả các khách hàng mua sắm tại hệ thống 68 nhà thuốc Trung Sơn và website 
+                                            <a href="https://trungsoncare.com/" target="_blank">https://trungsoncare.com/</a>  trong thời gian diễn ra chương trình.</p>
+                                        <p>4. Địa điểm áp dụng: Toàn Quốc</p>
+                                        <p>5. Hình thức khuyến mại: VÒNG QUAY TRÚNG THƯỞNG & BỐC THĂM MAY MẮN</p>
+                                        <p>6. Nội dung chi tiết:</p>
+                                        <p>Từ ngày 05/12 – 31/12/2020, khi mua hàng tại Trung Sơn Pharma, quý khách hàng sẽ có cơ hội tham gia </p>
+                                        <p>A. “Vòng quay trúng thưởng” được diễn ra mỗi ngày với hàng ngàn quà tặng vô cùng hấp dẫn.</p>
+                                        <p>B. “Bốc thăm may mắn” được diễn ra hằng tuần với cơ hội rinh ngay phần thưởng siêu giá trị: 20 chỉ vàng <strong>SJC 9999</strong>, 
+                                            3 <strong>Ipad Pro 11” Wifi 2020</strong> và đặc biệt là siêu phẩm <strong>Iphone 12 Pro Max</strong> vào tuần lễ sinh nhật Trung Sơn.</p>
+                                        <p><strong>Cách thức tham gia:</strong> Với tất cả đơn hàng hoặc mỗi hóa đơn mua hàng trị giá từ 50.000Đ tại 
+                                            Trung Sơn Pharma, quý khách hàng sẽ nhận được 01 mã tham gia chương trình khuyến mãi tại: <strong>sinhnhat.trungsoncare.com</strong></p>
+                                        <p>Mỗi mã hóa đơn sẽ tương ứng với 01 mã tham gia, khách hàng đăng nhập vào trang sinhnhat.trungsoncare.com nhập mã hóa đơn để tham gia 
+                                            “vòng quay trúng thưởng”. Mã tham gia mỗi ngày sẽ được tổng hợp cho chương trình “Bốc thăm may mắn” mỗi tuần.</p>
+                                        <p>5. Cơ cấu giải thưởng: </p>
+                                        <p>- Vòng quay trúng thưởng: Voucher mua hàng, Túi xách, Gel rửa tay.</p>
+                                        <p>- Bốc thăm may mắn: 20 chỉ vàng, 3 ipad , 1 iphone 12.</p>
+                                        <p>6. Thời gian, địa điểm và cách thức xác nhận trúng thưởng:</p>
+                                        <p>- Vòng quay trúng thưởng: khách hàng đăng nhập vào trang sinhnhat.trungsoncare.com để nhập mã hóa đơn 
+                                            để tham gia quay số trực tuyến trên website trong thời gian từ ngày 05/12 -31/12/2020. Khách hàng 
+                                            trúng thưởng chương trình “vòng quay trúng thưởng” sẽ được cập nhật thông tin tại sinhnhat.trungsoncare.com. 
+                                            Ban tổ chức sẽ liên hệ cho khách trúng thưởng để hướng dẫn nhận quà. 
+                                            Thời gian nhận quà tối đa không quá 10 ngày khi kết quả được công bố.</p>
+                                        <p>- Bốc thăm may mắn: chương trình diễn ra vào 19h thứ 7 hàng tuần bằng hình thức livestream trên fanpage chính thức “Trung Son Pharma”. 
+                                            Khách hàng khi tham gia chương trình “vòng quay trúng thưởng” sẽ được ghi nhận mã tham gia tương ứng với mã hóa đơn mua hàng. 
+                                            Khách trúng thưởng sẽ được ban tổ chức gọi trực tiếp để thông báo xác nhận, tuy nhiên nếu sau 3 lần gọi không liên hệ được thì sẽ tiến hành bốc thăm lại. 
+                                            Mỗi khách hàng chỉ trúng tối đa một phần quà là vàng hoặc ipad pro hoặc iphone 12 pro. 
+                                            Trường hợp kết qủa trùng, khách hàng được chọn quà có giá trị lớn hơn. Phần quà giá trị nhỏ hơn sẽ được tiến hàng bốc thăm lại.</p>
+                                        <p>Link fanpage: <a href="https://www.facebook.com/nhathuoctrungson">https://www.facebook.com/nhathuoctrungson</a></p>
+                                        <div class="table-tnc">
+                                            <ul>
+                                                <li>
+                                                    <div class="tb-week"></div>
+                                                    <div class="tb-time"><p><strong>Thời gian</strong></p></div>
+                                                    <div class="tb-spin"><p><strong>Tiến hành quay số</strong></p></div>
+                                                    <div class="tb-pize"><p><strong>Giải thưởng</strong></p></div>
+                                                </li>
+                                                <li>
+                                                    <div class="tb-week"><p><strong>Tuần 1</strong></p></div>
+                                                    <div class="tb-time"><p>5/12</p></div>
+                                                    <div class="tb-spin"><p>5/12</p></div>
+                                                    <div class="tb-pize"><p>05 chỉ vàng , 01 Ipad</p></div>
+                                                </li>
+                                                <li>
+                                                    <div class="tb-week"><p><strong>Tuần 2</strong></p></div>
+                                                    <div class="tb-time"><p>07 - 13/12</p></div>
+                                                    <div class="tb-spin"><p>13/12</p></div>
+                                                    <div class="tb-pize"><p>05 chỉ vàng, 01 Ipad</p></div>
+                                                </li>
+                                                <li>
+                                                    <div class="tb-week"><p><strong>Tuần 03 (Tuần sinh nhật)</strong></p></div>
+                                                    <div class="tb-time"><p>13 - 19/12</p></div>
+                                                    <div class="tb-spin"><p>20/12</p></div>
+                                                    <div class="tb-pize"><p>05 chỉ vàng, 01 Iphone 12</p></div>
+                                                </li>
+                                                <li>
+                                                    <div class="tb-week"><p><strong>Tuần 04</strong></p></div>
+                                                    <div class="tb-time"><p>20 - 30/12</p></div>
+                                                    <div class="tb-spin"><p>31/12</p></div>
+                                                    <div class="tb-pize"><p>05 chỉ vàng, 01 Ipad</p></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p>* Lưu ý: Giải thưởng không có giá trị quy đổi thành tiền mặt.</p>
+                                        <p>7. Điều kiện tham gia</p>
+                                        <p>- Khách hàng mua hàng tại hệ thống 68 Nhà thuốc Trung Sơn và website 
+                                            <a href="https://trungsoncare.com/" target="_blank">https://trungsoncare.com/</a> trong thời gian từ 05/12/2020 - 31/12/2020.</p>
+                                        <p>- Kết quả trúng thưởng và thông tin chương trình sẽ được cập nhập tại: <strong>sinhnhat.trungsoncare.com</strong></p>
+                                        <p>- Mã số tham gia sẽ tương ứng với mã hóa đơn khi mua hàng.</p>
+                                        <p>- Khách hàng trúng thưởng “Bốc thăm may mắn” sẽ được Trung Sơn Pharma liên hệ trực tiếp để hướng dẫn cách thức nhận quà.</p>
+                                        <p>- Ban tổ chức có toàn quyền sử dụng thông tin, hình ảnh của Người tham gia chương trình trên các 
+                                            kênh thông tin của chương trình & các phương tiện truyền thông khác.</p>
+                                        <p>- Trong trường hợp mâu thuẫn và khiếu nại thì quyết định của Trung Sơn Pharma là quyết định cuối cùng.</p>
+                                        <p>- Đầu mối giải đáp thắc liên quan đến chương trình xin vui lòng liên hệ hotline 1800558898.</p>
                                     </div>
-                                </div>
-                                <div class="item-but">
-                                    <div class="fs-box-but">
-                                        <button class="fs-but">TUẦN 2</button>
-                                    </div>
-                                </div>
-                                <div class="item-but">
-                                    <div class="fs-box-but">
-                                        <button class="fs-but">TUẦN 3</button>
-                                    </div>
-                                </div>
-                                <div class="item-but">
-                                    <div class="fs-box-but">
-                                        <button class="fs-but">TUẦN 4</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-tnc">
-                        <div class="tnc-inr">
-                            <div class="small-title">THỂ LỆ CHƯƠNG TRÌNH</div>
-                            <div class="box-scroll-tnc">
-                                <div class="content-tnc">
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
-                                    <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, error?</p>
                                 </div>
                             </div>
                         </div>
@@ -408,16 +472,22 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="fs-pic">
-                                        <img class="cmPic fs-lazy"
+                                        <img class="fs-pc pcPic fs-lazy"
                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                             data-src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
+                                        <img class="fs-sp spPic fs-lazy"
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            data-src="images/slider-sp.jpg" alt="Mừng sinh nhật rộn ràng">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="fs-pic">
-                                        <img class="cmPic fs-lazy"
+                                        <img class="fs-pc pcPic fs-lazy"
                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                             data-src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
+                                        <img class="fs-sp spPic fs-lazy"
+                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                            data-src="images/slider-sp.jpg" alt="Mừng sinh nhật rộn ràng">
                                     </div>
                                 </div>
                             </div>

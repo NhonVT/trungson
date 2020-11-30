@@ -295,6 +295,7 @@ function starPage() {
 		});
 	}
 
+
 	if (loading) {
 		loading = false;
 
@@ -307,13 +308,22 @@ function starPage() {
 			fsEvent();
 
 			isCroll = true;
+
+			if(window.innerWidth < 1100){
+				$('.boxScroll').getNiceScroll().remove();
+			}else{
+				scrollPopUp();
+			}
 		});
+
+		
 
 		// setTimeout(function () {
 		// 	ImgLazyLoad();
 		// }, 560);
 
 	}
+	scrollPopUp();
 
 }
 
@@ -344,6 +354,11 @@ function Resize() {
 						radius: 500,
 						dir: -1,
 					});
+				}
+				if(window.innerWidth < 1100){
+					$('.boxScroll').getNiceScroll().remove();
+				}else{
+					scrollPopUp();
 				}
 			},100)
 		}
@@ -383,6 +398,9 @@ $(window).on('load', function () {
 	includeHTML();
 
 	ImgLazyLoad(); // must be call here fisrt
+
+
+
 	setTimeout(function () {
 		if (loading) {
 			starPage();
