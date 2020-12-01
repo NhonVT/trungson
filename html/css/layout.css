@@ -775,6 +775,7 @@ sup{
 	.fs-but {
 		font-size: 1.4rem;
 		height: 3.8rem;
+		line-height: 3.8rem;
 	}
 
 	/* Select */

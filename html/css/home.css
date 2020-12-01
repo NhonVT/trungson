@@ -795,7 +795,7 @@
         max-width: 110rem;
     }
     .box-input-code h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .box-input-code .input-code input[type="text"] {
         height: 4rem;
@@ -806,8 +806,8 @@
         margin: 0 auto 1rem auto;
     }
     .box-input-user h2 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
     .box-input-user .fs-group input[type='text'], .box-input-user .fs-group input[type='email'], .box-input-user .fs-group input[type='number'], .box-input-user .fs-group input[type='password'] {
         padding: 0 1.5rem;
