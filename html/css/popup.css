@@ -63,19 +63,18 @@
 }
 .fs-box-noti .fs-txt{
 	position: absolute;
-	top: 50%;
-	left: 6.666%;
-	width: 37.777%;
-	height: auto;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	text-align: center;
+    top: 50%;
+    left: 3.666%;
+    width: 40.777%;
+    height: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .fs-box-noti .logo-popup{
-	position: relative;
-	display: block;
-	width: 80%;
-	margin: 0 auto 2% auto;
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 0 auto 2% auto;
 }
 .logo-popup img{
 	width: 100%;
@@ -85,19 +84,23 @@
 	display: block;
 	width: 100%;
 }
+.area-txt .sub-title{
+	font-size: 1.6rem;
+	color: #fff;
+	text-align: center;
+}
 .area-txt h3{
-	font-size: 2rem;
-	font-weight: 700;
-	color: #ffff00;
-	line-height: 1.4;
-	margin-bottom: 3%;
+	font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffff00;
+    line-height: 1.4;
+	margin-bottom: 1.5%;
+    text-align: center;
 }
 .area-txt p{
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.3rem;
     margin-bottom: 0.5%;
     color: #fff;
-    padding: 0 7%;
 }
 .area-txt p.font-normal{
 	font-weight: 500;
@@ -106,11 +109,22 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	margin-top: 3%;
+	margin: 2% 0;
+	text-align: center;
 }
 .fs-note span{
 	font-size: 1.2rem;
 	color: #fff;
+	font-weight: 700;
+}
+.area-txt .fs-box-but{
+	text-align: center;
+}
+.area-txt .fs-but {
+    width: 40%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.4rem;
 }
 
 
@@ -544,15 +558,18 @@
 		overflow: hidden;
 	}
 	.fs-box-noti .fs-txt {
-		top: 53%;
+		top: 41%;
 		left: 50%;
 		width: 90%;
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
 	}
 	.fs-box-noti .logo-popup {
-		width: 40%;
-		margin: 0 auto 2% auto;
+		width: 50%;
+		margin: 0 auto 1% auto;
+	}
+	.area-txt .sub-title {
+		font-size: 3vw;
 	}
 	.area-txt h3 {
 		font-size: 3.5vw;
@@ -565,6 +582,11 @@
 	}
 	.fs-note span {
 		font-size: 2.66vw;
+	}
+	.area-txt .fs-but {
+		height: 9vw;
+		line-height: 9vw;
+		font-size: 3.5vw;
 	}
 
 

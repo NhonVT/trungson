@@ -143,20 +143,19 @@
 }
 .text-list-inr .fs-txt{
     display: inline-block;
-    border: 1px solid #208b0d;
+    vertical-align: middle;
+    margin-right: 2%;
+}
+.text-list-inr .fs-txt a{
+    display: block;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    padding: 0.5rem 1.5rem;
-}
-.text-list-inr .fs-txt p{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #208b0d;
-}
-.text-list-inr .fs-txt p span{
+    border: 1px solid #ff9403;
     color: #ff9403;
-    cursor: pointer;
 }
+
 
 /* Section slider */
 .slider-inr{
@@ -297,6 +296,13 @@
     font-size: 1.8rem;
     color: #484849;
     margin-bottom: 1%;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 4.3rem;
 }
 .info-product p{
     font-size: 1.4rem;
@@ -837,8 +843,8 @@
         max-width: 110rem;
         padding: 1rem 0;
     }
-    .text-list-inr .fs-txt p {
-        font-size: 1.4rem;
+    .text-list-inr .fs-txt a {
+        font-size: 1.7rem;
     }
 
     /* Section slider */
@@ -868,6 +874,7 @@
     }
     .info-product h3 {
         font-size: 1.6rem;
+        min-height: 3.7rem;
     }
     .info-product p {
         font-size: 1.2rem;
@@ -1002,13 +1009,17 @@
         width: 90%;
     }
     .text-list-inr .fs-txt {
+        width: 80%;
+        margin: 0 auto 4% auto;
+    }
+    .text-list-inr .fs-txt:last-child {
+        margin: 0 auto;
+    }
+    .text-list-inr .fs-txt a {
+        font-size: 4.5vw;
+        padding: 2.6vw 0;
         -webkit-border-radius: 1.333vw;
         border-radius: 1.333vw;
-        padding: 1.3333vw 2.666vw;
-        width: 100%;
-    }
-    .text-list-inr .fs-txt p {
-        font-size: 3vw;
     }
 
     .rank-inr {
@@ -1151,8 +1162,9 @@
         margin-bottom: 7.8387%;
     }
     .info-product h3 {
-        font-size: 3.9vw;
+        font-size: 3.5vw;
         margin-bottom: 5%;
+        min-height: 10vw;
     }
     .info-product p {
         font-size: 2.8vw;
