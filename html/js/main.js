@@ -88,7 +88,7 @@ function fsEvent() {
 	});
 
 	// Open Popup
-	$('.open-popup').on('click', function () {
+	$(document).on('click', '.open-popup', function () {
 		var url = $(this).attr('data-href');
 		if (isLoading) {
 			isLoading = false;
