@@ -1,0 +1,284 @@
+/*Fonts*/
+@font-face {
+    font-family: 'SVN-Holiday';
+    src: url('../fonts/SVN-Holiday.eot');
+    src: url('../fonts/SVN-Holiday.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-Holiday.woff2') format('woff2'),
+        url('../fonts/SVN-Holiday.woff') format('woff'),
+        url('../fonts/SVN-Holiday.ttf') format('truetype'),
+        url('../fonts/SVN-Holiday.svg#SVN-Holiday') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.eot');
+    src: url('../fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+        url('../fonts/Montserrat-Italic.woff') format('woff'),
+        url('../fonts/Montserrat-Italic.ttf') format('truetype'),
+        url('../fonts/Montserrat-Italic.svg#Montserrat-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-MediumItalic.eot');
+    src: url('../fonts/Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-MediumItalic.woff') format('woff'),
+        url('../fonts/Montserrat-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Montserrat-MediumItalic.svg#Montserrat-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.eot');
+    src: url('../fonts/Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-BoldItalic.woff') format('woff'),
+        url('../fonts/Montserrat-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Montserrat-BoldItalic.svg#Montserrat-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.eot');
+    src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/Montserrat-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.eot');
+    src: url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/Montserrat-Black.woff') format('woff'),
+        url('../fonts/Montserrat-Black.ttf') format('truetype'),
+        url('../fonts/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo Bhai';
+    src: url('../fonts/BalooBhai-Regular.woff2') format('woff2'),
+        url('../fonts/BalooBhai-Regular.woff') format('woff'),
+        url('../fonts/BalooBhai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo';
+    src: url('../fonts/Baloo.woff2') format('woff2'),
+        url('../fonts/Baloo.woff') format('woff'),
+        url('../fonts/Baloo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Bold.woff2') format('woff2'),
+        url('../fonts/GothamRounded-Bold.woff') format('woff'),
+        url('../fonts/GothamRounded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('../fonts/SVN-GothamRoundedBold.woff2') format('woff2'),
+        url('../fonts/SVN-GothamRoundedBold.woff') format('woff'),
+        url('../fonts/SVN-GothamRoundedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('../fonts/SVN-GothamRoundedMedium.woff2') format('woff2'),
+        url('../fonts/SVN-GothamRoundedMedium.woff') format('woff'),
+        url('../fonts/SVN-GothamRoundedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Display';
+    src: url('../fonts/SanFranciscoDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SanFranciscoDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SanFranciscoDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Text';
+    src: url('../fonts/SanFranciscoText-Medium.woff2') format('woff2'),
+        url('../fonts/SanFranciscoText-Medium.woff') format('woff'),
+        url('../fonts/SanFranciscoText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Text';
+    src: url('../fonts/SanFranciscoText-Semibold.woff2') format('woff2'),
+        url('../fonts/SanFranciscoText-Semibold.woff') format('woff'),
+        url('../fonts/SanFranciscoText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'San Francisco Text';
+    src: url('../fonts/SanFranciscoText-Bold.woff2') format('woff2'),
+        url('../fonts/SanFranciscoText-Bold.woff') format('woff'),
+        url('../fonts/SanFranciscoText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+
+
+
+html, body{
+    font-family:'Montserrat';
+    font-weight:400;
+	font-style:normal;
+}
+
+
+.item-top a, .fs-group input[type='text'], 
+.fs-group input[type='password'], 
+.fs-group textarea{
+	font-style:normal;
+	font-weight:400;
+}
+.fs-navigation li a, .input-code-now{
+	font-style:normal;
+	font-weight:700;
+}
+.fs-checkbox input[type='checkbox']:checked + label::after {
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	opacity:1;
+}
+.fs-radio input[type='radio']:checked + label::after{
+    opacity:1;
+}
+
+.fs-size-01 {
+    width: 8.3333%
+}
+.fs-size-02 {
+    width: 16.6666%
+}
+.fs-size-03 {
+    width: 25%
+}
+.fs-size-04 {
+    width: 33.3333%
+}
+.fs-size-05 {
+    width: 41.6666%
+}
+.fs-size-06 {
+    width: 50%
+}
+.fs-size-07 {
+    width: 58.3333%
+}
+.fs-size-08 {
+    width: 66.6666%
+}
+.fs-size-09 {
+    width: 75%
+}
+.fs-size-10 {
+    width: 83.3333%
+}
+.fs-size-11 {
+    width: 91.6666%
+}
+.fs-size-12 {
+    width: 100%
+}
+
+.fs-navigation li a{
+    -webkit-transition:color 0.3s ease-in-out;
+    transition:color 0.3s ease-in-out;
+}
+.fs-navigation li.active a{
+    color:#f04e27;
+}
+
+@media screen and (min-width:960px) {
+
+}
+
+@media screen and (max-width:959px) {
+    
+
+}
