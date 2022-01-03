@@ -919,6 +919,17 @@
 }
 
 
+.no-action-tree{
+    position: relative !important;
+    pointer-events: none !important;
+    left: auto !important;
+}
+.no-action{
+    pointer-events: none !important;
+    opacity: 0.5;
+}
+
+
 @media screen and (max-width: 1389px){
     .banner-inr {
         max-width: 110rem;

@@ -166,6 +166,7 @@ function fsEvent() {
 	inputHolder();
 	scrollResult();
 	scrollTnc();
+	actionClickToShake();
 }
 
 
@@ -193,6 +194,26 @@ function scrollTnc() {
 			});
 		});
 	}
+}
+
+var isPlaying = false;
+var countClick = 6;
+
+function actionClickToShake() {
+	$(document).on('click', '.tree__pic, .but__shake--tree', function () {
+		countClick--;
+		if (!isPlaying && countClick >= 0) {
+			$('.tree__pic_img').shake();
+		} else {
+			isPlaying = true;
+			console.log('show popup');
+			$('.modal').addClass('active');
+			$('.tree__pic_img').addClass('no-action-tree');
+			$('.but__shake--tree').addClass('no-action');
+			$('.tree__pic').addClass('no-action');
+		}
+
+	});
 }
 
 // Create Slider
