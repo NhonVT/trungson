@@ -494,26 +494,26 @@ sup{
 .fs-group input[type='number']::placeholder,
 .fs-group input[type='password']::placeholder,
 .fs-group textarea::placeholder {
-	color:#b1b1b1;
+	color:#57585b;
 }
 .fs-group input[type='text']:-ms-input-placeholder,
 .fs-group input[type='email']:-ms-input-placeholder,
 .fs-group input[type='number']:-ms-input-placeholder,
 .fs-group input[type='password']:-ms-input-placeholder,
 .fs-group textarea:-ms-input-placeholder { 
-  color:#b1b1b1;
+  color:#57585b;
 }
 .fs-group input[type='text']::-ms-input-placeholder,
 .fs-group input[type='password']::-ms-input-placeholder,
 .fs-group textarea::-ms-input-placeholder{
-	color:#b1b1b1;
+	color:#57585b;
 }
 .fs-group input[type='text']::-moz-placeholder,
 .fs-group input[type='email']::-moz-placeholder,
 .fs-group input[type='number']::-moz-placeholder,
 .fs-group input[type='password']::-moz-placeholder,
 .fs-group textarea::-moz-placeholder {
-	color:#b1b1b1; 
+	color:#57585b; 
 	opacity:1;
 }
 .fs-group input[type='text']:focus,

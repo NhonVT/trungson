@@ -1,16 +1,20 @@
-.popup-overlay{
+.popup-overlay, .popup-overlay-tnc{
 	position:fixed;
 	left:0;
 	top:0;
 	width:100vw;
 	height:100vh;
 	/* background-color:rgba(10,126,0,0.5); */
-	background-color:rgba(0,0,0,0.8);
+	background-color:rgba(14, 76, 45, 0.8);
 	z-index:50;
 	text-align:center;
 	display:none;
 }
-.popup-overlay::before, .popup-overlay::after{
+.popup-overlay-tnc.active{
+	display: block;
+}
+.popup-overlay::before, .popup-overlay::after,
+.popup-overlay-tnc::before, .popup-overlay-tnc::after{
 	content:'';
 	position:relative;
 	display:inline-block;
@@ -32,7 +36,11 @@
 	max-height:inherit;
 	/* overflow:hidden; */
 }
-.close-but, .close-modal{
+.tnc__pop{
+	max-height:inherit;
+	width: 53.26086%;
+}
+.close-but, .close-modal, .close-but-tnc{
     position: absolute;
     right: -2%;
     top: -3%;
@@ -42,7 +50,7 @@
     cursor: pointer;
     z-index: 3;
 }
-.close-but img, .close-modal img{
+.close-but img, .close-modal img, .close-but-tnc img{
 	width:100%;
 }
 .fs-form {

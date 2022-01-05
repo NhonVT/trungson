@@ -5,7 +5,6 @@
     width: 100%;
     max-width: 138rem;
     margin: 0 auto;
-    padding: 1rem 0 0 0;
 }
 .banner-box{
     position: relative;
@@ -23,7 +22,7 @@
 .box-form{
     position: absolute;
     display: block;
-    top: 6.134%;
+    top: 15.134%;
     left: 8.6956%;
     width: 28.6956%;
     z-index: 1;
@@ -61,7 +60,6 @@
 
 .box-input-user{
     position: relative;
-    display: none;
     width: 100%;
 }
 .box-logo{
@@ -82,6 +80,9 @@
 .box-input-user .fs-group{
     margin-bottom: 1rem;
 }
+.box-input-user .fs-group:nth-child(2){
+    margin-bottom: 2rem;
+}
 .box-input-user .fs-group input[type='text'], 
 .box-input-user .fs-group input[type='email'], 
 .box-input-user .fs-group input[type='number'], 
@@ -90,6 +91,8 @@
     height: 4rem;
     font-size: 1.7rem;
 }
+
+
 .box-input-user .fs-select-header{
     padding: 0 2rem;
     height: 3.5rem;
