@@ -107,6 +107,10 @@ function fsEvent() {
 		});
 	});
 
+	$(document).on('click', '.close-but-tnc', function () {
+		$('.popup-overlay-tnc').fadeOut(300);
+	})
+
 	$(document).on('click', '.close-modal', function () {
 		$('.modal').removeClass('active');
 		$('body').removeClass('fs-no-scroll');
@@ -163,6 +167,12 @@ function fsEvent() {
 		$("html, body").stop().animate({ scrollTop: 0 }, 500);
 	});
 
+	$(document).on('click', '.js-enter-bill', function () {
+		if ($('.lucky__tree').hasClass('no_event')) {
+			$('.lucky__tree').removeClass('no_event');
+		}
+	})
+
 	inputHolder();
 	// scrollResult();
 	// scrollTnc();
@@ -201,18 +211,18 @@ var countClick = 6;
 
 function actionClickToShake() {
 	$(document).on('click', '.tree__pic, .but__shake--tree', function () {
-		countClick--;
-		if (!isPlaying && countClick >= 0) {
+		if (countClick >= 0) {
+			countClick--;
 			$('.tree__pic_img').shake();
+			console.log(countClick);
 		} else {
-			isPlaying = true;
-			console.log('show popup');
 			$('.modal').addClass('active');
 			$('.tree__pic_img').addClass('no-action-tree');
 			$('.but__shake--tree').addClass('no-action');
 			$('.tree__pic').addClass('no-action');
+			$('.popup-overlay').fadeOut();
+			countClick = 6;
 		}
-
 	});
 }
 

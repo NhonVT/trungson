@@ -97,7 +97,7 @@
 	max-width:80rem;
 	max-height:90vh;
 	text-align:left;
-	transform: translate(21%, -35%) scale(0.1);
+	transform: translate(8%, -7%) scale(0.1);
 	-webkit-transition: transform 0.5s ease-in-out 0.1s;
 	transition: transform 0.5s ease-in-out 0.1s;
 }
@@ -482,6 +482,102 @@
 	-webkit-border-radius: 5rem;
 	border-radius: 5rem;
 }
+
+/* pop__question */
+.pop__question .but__buy{
+	position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 27%;
+	-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.pop__question .but__no__buy{
+	position: absolute;
+    bottom: 14%;
+    left: 50%;
+    width: 27%;
+	-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/* Tree */
+.lucky__tree .tree__pic{
+    position: absolute;
+    width: 39.8773%;
+    height: auto;
+    z-index: 1;
+}
+.lucky__tree .but__shake--tree{
+    position: absolute;
+    bottom: 7%;
+    right: 25.6%;
+    width: 18.768%;
+    height: auto;
+    cursor: pointer;
+    z-index: 1;
+}
+.lucky__tree.no_event{
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+/* pop__enter__bill */
+.pop__enter__bill{
+    max-width: 97.8rem;
+    max-height: initial;
+}
+.pop__enter__bill .box-form {
+    left: 5.6956%;
+    width: 30.26584%;
+}
+.pop__enter__bill .box-input-user h2 {
+    font-size: 2rem;
+    margin-bottom: 4%;
+}
+.pop__enter__bill .box-input-user .fs-group {
+    margin-bottom: 2rem;
+}
+.pop__enter__bill .box-input-user .fs-but {
+    width: 50%;
+    height: 3.5rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+.pop__enter__bill .box-input-user .fs-group input[type='text'], 
+.pop__enter__bill .box-input-user .fs-group input[type='email'], 
+.pop__enter__bill .box-input-user .fs-group input[type='number'], 
+.pop__enter__bill .box-input-user .fs-group input[type='password'] {
+    padding: 0 1.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.pop__enter__bill .lucky__tree .tree__pic{
+    top: 7%;
+    right: 23%;
+}
+
+.pop__enter__bill .lucky__tree .but__shake--tree{
+    bottom: 4%;
+    right: 30.9%;
+}
+
+/* pop__no__bill */
+.pop__no__bill{
+	max-width: 97.8rem;
+    max-height: initial;
+}
+.pop__no__bill .lucky__tree .tree__pic{
+	top: 6%;
+    left: 29%;
+}	
+.pop__no__bill .lucky__tree .but__shake--tree{
+    bottom: 4%;
+    left: 42%;
+}	
+
+
 
 @media screen and (max-width:1200px) {
 

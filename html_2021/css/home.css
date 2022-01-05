@@ -139,24 +139,7 @@
     display: block;
 }
 
-/* Tree */
-.lucky__tree .tree__pic{
-    position: absolute;
-    top: 13%;
-    right: 19%;
-    width: 35.942%;
-    height: auto;
-    z-index: 1;
-}
-.lucky__tree .but__shake--tree{
-    position: absolute;
-    bottom: 7%;
-    right: 25.6%;
-    width: 18.768%;
-    height: auto;
-    cursor: pointer;
-    z-index: 1;
-}
+
 .flash{
     position: absolute;
     top: 0;
