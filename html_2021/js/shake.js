@@ -1,7 +1,7 @@
 jQuery.fn.shake = function (intShakes, intDistance, intDuration) {
-    intShakes = intShakes || 5;
-    intDistance = intDistance || 5;
-    intDuration = intDuration || 500;
+    intShakes = intShakes || 6;
+    intDistance = intDistance || 8;
+    intDuration = intDuration || 400;
 
     this.each(function () {
         $(this).css("position", "relative");

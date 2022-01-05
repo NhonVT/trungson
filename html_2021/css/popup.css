@@ -75,6 +75,11 @@
 	visibility: hidden;
 	-webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	-webkit-user-select: none;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none;
 }
 .modal.active{
 	opacity: 1;
@@ -100,8 +105,14 @@
 	transform: translate(8%, -7%) scale(0.1);
 	-webkit-transition: transform 0.5s ease-in-out 0.1s;
 	transition: transform 0.5s ease-in-out 0.1s;
+	-webkit-user-select: none;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none;
 }
 .modal.active .modal_inr{
+	-webkit-transform: translate(0,0) scale(1);
 	transform: translate(0,0) scale(1);
 }
 
