@@ -191,6 +191,75 @@
     max-width: 43%;
 }
 
+.pt__banner{
+    position: absolute;
+    display: block;
+    height: auto;
+}
+.pt__banner::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.tree__pt{
+    top: 6%;
+    right: 18%;
+    width: 38.18840%;
+    background: url(../images/tree.png) no-repeat center center;
+    background-size: 100% auto;
+    z-index: 1;
+}
+.tree__pt::before{
+    padding-top: 102.0872%;
+}
+.tiger__right{
+    top: 61%;
+    right: 11%;
+    width: 8.84057%;
+    background: url(../images/patterns/tiger-right.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.tiger__right::before{
+    padding-top: 172.1311%;
+}
+.tiger__left{
+    top: 63%;
+    left: 38%;
+    width: 9.42028%;
+    background: url(../images/patterns/tiger-left.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.tiger__left::before{
+    padding-top: 153.076%;
+}
+.pt__flower--1{
+    bottom: 10%;
+    left: 18%;
+    width: 1.9565%;
+    background: url(../images/patterns/flower-1.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.pt__flower--2{
+    bottom: 25%;
+    right: 7%;
+    width: 1.9565%;
+    background: url(../images/patterns/flower-2.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.pt__flower--3{
+    bottom: 10%;
+    right: 8%;
+    width: 2.1014%;
+    background: url(../images/patterns/flower-3.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.pt__flower--1::before, 
+.pt__flower--2::before, 
+.pt__flower--3::before{
+    padding-top: 100%;
+}
+
 
 
 /* Section text List */
@@ -442,6 +511,16 @@
     font-weight: 600;
     font-style: normal;
     text-transform: capitalize;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.item-product .fs-but:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,137,65,0.6); 
+    box-shadow: 0px 0px 15px 3px rgba(0,137,65,0.6);
 }
 .item-product .fs-but a{
     display: block;
@@ -898,6 +977,7 @@
     width: 14.1945%;
     background: url(../images/pattern_tiger-2.png) no-repeat center center;
     background-size: 100% auto;
+    z-index: 1;
 }
 .pt__tiger--2::before{
     content: '';
@@ -1117,6 +1197,40 @@
         font-size: 4vw;
         line-height: 8.666vw;
         width: 55%;
+    }
+
+    .tree__pt {
+        top: auto;
+        right: 26%;
+        width: 49.1884%;
+        bottom: 3%;
+    }
+    .tiger__left {
+        bottom: 2%;
+        left: 20%;
+        width: 11%;
+        top: auto;
+        z-index: 2;
+    }
+    .tiger__right {
+        bottom: 2%;
+        right: 20%;
+        width: 10.5%;
+        top: auto;
+    }
+    .pt__flower--1 {
+        bottom: 19%;
+        width: 2.9565%;
+    }
+    .pt__flower--2 {
+        bottom: 19%;
+        right: 15%;
+        width: 2.9565%;
+    }
+    .pt__flower--3 {
+        bottom: 10%;
+        right: 14%;
+        width: 3.1014%;
     }
 
 
