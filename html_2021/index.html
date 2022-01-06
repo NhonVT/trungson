@@ -36,6 +36,11 @@
 </head>
 
 <body data-page="trang-chu">
+    <div class="audio__hidden">
+        <audio id="mp3__background">
+            <source src="audio/demo.mp3" type="audio/mpeg">
+        </audio>
+    </div>
     <div class="fs-loading" style="position:fixed;left:0;top:0;right:0;bottom:0;background:#fff;z-index:1000"></div>
     <div class="fs-page">
 
@@ -103,6 +108,7 @@
                                 <div class="bg__all_prize">
                                     <div class="fs-pic bg__organe">
                                         <img class="fs-pc" src="images/bg_organe.png" alt="Cây may mắn">
+                                        <img class="fs-sp" src="images/bg_organe_sp.png" alt="Cây may mắn">
                                     </div>
                                     <div class="fs-pic title__number--prize">
                                         <img src="images/total_number.png" alt="Cây may mắn">
@@ -119,13 +125,19 @@
                                 </div>
                                 <div class="list__table">
                                     <div class="list__result__box">
-                                        <div class="table__head">
+                                        <div class="table__head fs-pc">
                                             <div class="item__head result__serial">STT</div>
                                             <div class="item__head result__name">Khách Hàng</div>
                                             <div class="item__head result__phone">Số điện thoại</div>
                                             <div class="item__head result__voucher">Phần thưởng</div>
                                         </div>
                                         <div class="table__body">
+                                            <div class="table__head fs-sp">
+                                                <div class="item__head result__serial">STT</div>
+                                                <div class="item__head result__name">Khách Hàng</div>
+                                                <div class="item__head result__phone">Số điện thoại</div>
+                                                <div class="item__head result__voucher">Phần thưởng</div>
+                                            </div>
                                             <ul>
                                                 <li>
                                                     <div class="item__body result__serial">
@@ -249,7 +261,8 @@
                                     data-href="popup-list-customer.html">
                                     <img src="images/btn_all_list.png" alt="Toàn bộ danh sách">
                                 </div>
-                                <a href="javacript:void(0);" class="fs-pic pic__link pic__voucher">
+                                <a href="https://trungsoncare.com/" target="_blank"
+                                    class="fs-pic pic__link pic__voucher">
                                     <img src="images/btn_show_voucher.png" alt="Sử dụng voucher">
                                 </a>
                             </div>
@@ -259,6 +272,7 @@
                                 <div class="bg__all_prize">
                                     <div class="fs-pic bg__organe">
                                         <img class="fs-pc" src="images/bg_white.png" alt="Cây may mắn">
+                                        <img class="fs-sp" src="images/bg_white_sp.png" alt="Cây may mắn">
                                     </div>
                                     <div class="fs-pic title__tnc">
                                         <img src="images/title_tnc.png" alt="Cây may mắn">
@@ -432,14 +446,16 @@
                                 <div class="swiper-slide">
                                     <a href="javascript:void(0);">
                                         <div class="fs-pic">
-                                            <img src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
+                                            <img class="fs-pc" src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
+                                            <img class="fs-sp" src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="javascript:void(0);">
                                         <div class="fs-pic">
-                                            <img src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
+                                            <img class="fs-pc" src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
+                                            <img class="fs-sp" src="images/slider.jpg" alt="Mừng sinh nhật rộn ràng">
                                         </div>
                                     </a>
                                 </div>
@@ -458,7 +474,8 @@
                     <div class="fs-box">
                         <div class="services__banner">
                             <div class="fs-pic service__pic">
-                                <img src="images/services.png" alt="Dịch vụ">
+                                <img class="fs-pc" src="images/services.png" alt="Dịch vụ">
+                                <img class="fs-sp" src="images/services_sp.png" alt="Dịch vụ">
                             </div>
                         </div>
                         <div class="title__product">
@@ -836,7 +853,7 @@
         <!--/Popup-->
 
         <!-- pop game -->
-        <div class="modal">
+        <div class="modal active">
             <div class="modal_inr">
                 <div class="close-modal"><img src="images/icon-close.png" alt="Close"></div>
                 <div class="fs-box">
@@ -848,7 +865,7 @@
         </div>
 
         <!-- pop tnc -->
-        <div class="popup-overlay-tnc active">
+        <div class="popup-overlay-tnc">
             <div class="popup-inr tnc__pop">
                 <div class="close-but-tnc"><img src="images/icon-close.png" alt="Close"></div>
                 <div class="fs-box">

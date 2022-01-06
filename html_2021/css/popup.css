@@ -511,6 +511,32 @@
 	-webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+.but__confirm{
+	position: relative;
+}
+.but__confirm .but__buy__confirm{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+}
+.but__confirm .btn__default{
+	position: relative;
+	opacity: 1;
+}
+.but__confirm .btn__active{
+	opacity: 0;
+}
+
+.but__confirm:hover .btn__default{
+	opacity: 0;
+}
+.but__confirm:hover .btn__active{
+	opacity: 1;
+}
 
 /* Tree */
 .lucky__tree .tree__pic{
@@ -518,6 +544,7 @@
     width: 39.8773%;
     height: auto;
     z-index: 1;
+	cursor: pointer;
 }
 .lucky__tree .but__shake--tree{
     position: absolute;

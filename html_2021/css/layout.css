@@ -596,7 +596,7 @@ sup{
 }
 .footer-top .fs-box{
 	flex: 0 0 33.333%;
-	max-width: 0 0 33.333%;
+	max-width:33.333%;
 }
 .footer-top li{
 	position: relative;
@@ -786,6 +786,29 @@ sup{
   .swiper-container-fade .swiper-slide-active .swiper-slide-active {
     pointer-events:auto;
   }
+  .pt__tiger{
+	  animation: shake 1s linear infinite alternate;
+  }
+  .pt__tiger--2{
+	animation: shake 1s linear infinite alternate;
+  }
+  @keyframes shake {
+	10%, 90% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+	
+	20%, 80% {
+	  transform: translate3d(2px, 0, 0);
+	}
+  
+	30%, 50%, 70% {
+	  transform: translate3d(-4px, 0, 0);
+	}
+  
+	40%, 60% {
+	  transform: translate3d(4px, 0, 0);
+	}
+  }
 
 @media screen and (max-width: 1389px){
 	/* Header */
@@ -927,7 +950,7 @@ sup{
 	} */
 
 	.footer-top {
-		padding: 5%;
+		padding: 3% 2% 2% 2%;
 	}
 	.footer-top p, .fs-social p {
 		font-size: 3.5vw;
@@ -938,6 +961,26 @@ sup{
 	.fs-social p {
 		font-size: 3.5vw;
 		margin-bottom: 3%;
+	}
+	.title__footer {
+		width: 90%;
+		margin: 0 auto 3% auto;
+	}
+	.list__box {
+		padding: 0;
+	}
+	.footer-top .fs-box {
+		flex: 0 0 49%;
+		max-width: 49%;
+		padding: 0 1%;
+		margin-bottom: 2%;
+	}
+	.footer-top .fs-box:last-child{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.footer-top p, .fs-social p, .footer-top li a {
+		font-size: 3.2vw;
 	}
 }
 @media screen and (max-width:520px) { 
