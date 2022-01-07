@@ -1454,6 +1454,7 @@
     .title__number--prize {
         top: -8%;
         width: 52%;
+        margin-left: 3vw;   
     }
     .pt__tiger {
         top: -7%;
@@ -1477,18 +1478,19 @@
 
 
     .item__head {
-        font-size: 4vw;
+        font-size: 3.2vw;
     }
     .item__body {
-        font-size: 3.5vw;
+        font-size: 2.8vw;
     }
     .list__result__box {
         padding: 0;
     }
     .table__body {
-        max-height: 100vw;
+        max-height: 95vw;
         overflow-x: auto;
         padding-bottom: 0;
+        min-height: 95vw;
     }
     .table__head.fs-pc{
         display: none;
@@ -1500,23 +1502,23 @@
         flex-wrap: nowrap;
     }
     .item__head, .item__body {
-        padding: 3%;
+        padding: 2.5%;
     }
     .result__serial {
-        flex: 0 0 21.7369%;
-        max-width: 21.7369%;
+        flex: 0 0 17%;
+        max-width: 17%;
     }
     .result__name {
         flex: 0 0 53.398%;
         max-width: 53.398%;
     }
     .result__phone {
-        flex: 0 0 44.725%;
-        max-width: 44.725%;
+        flex: 0 0 33.725%;
+        max-width: 33.725%;
     }
     .result__voucher {
-        flex: 0 0 68.98%;
-        max-width: 68.98%;
+        flex: 0 0 57.98%;
+        max-width: 57.98%;
     }
     .table__body li:nth-child(odd) {
         background-color: transparent;

@@ -109,7 +109,7 @@ function fsEvent() {
 
 	$(document).on('click', '.close-but-tnc', function () {
 		$('.popup-overlay-tnc').fadeOut(300);
-		// playAudioBackground();
+		playAudioBackground();
 	})
 
 	$(document).on('click', '.close-modal', function () {
@@ -172,7 +172,13 @@ function fsEvent() {
 		if ($('.lucky__tree').hasClass('no_event')) {
 			$('.lucky__tree').removeClass('no_event');
 		}
-	})
+	});
+
+	$('.nav li').on('click', function () {
+		var target = $(this).attr('data-nav');
+		var offetTop = $(target).offset().top - 150;
+		$('html, body').animate({ scrollTop: offetTop }, 800);
+	});
 
 	inputHolder();
 	// scrollResult();
@@ -320,6 +326,7 @@ function playAudioBackground() {
 	var audio = document.getElementById("mp3__background");
 	audio.play();
 	audio.loop = true;
+	audio.volume = 0.6;
 }
 
 // Variables for Scroll
