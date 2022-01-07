@@ -76,10 +76,15 @@ function includeHTML() {
 
 // Events Common
 function fsEvent() {
-
 	// Open menu
-	$('.nav-but').on('click', function () {
-		$('body').addClass('open-menu');
+	$(document).on('click', '.nav__but', function () {
+		if ($('body').hasClass('open-menu')) {
+			$('body').removeClass('open-menu');
+			$('body').removeClass('fs-no-scroll');
+		} else {
+			$('body').addClass('open-menu');
+			$('body').addClass('fs-no-scroll');
+		}
 	});
 
 	// Close menu
@@ -176,8 +181,19 @@ function fsEvent() {
 
 	$('.nav li').on('click', function () {
 		var target = $(this).attr('data-nav');
-		var offetTop = $(target).offset().top - 150;
+		var offetTop = $(target).offset().top - 180;
 		$('html, body').animate({ scrollTop: offetTop }, 800);
+		if (window.innerWidth < 1100) {
+			if ($('body').hasClass('open-menu')) {
+				$('body').removeClass('open-menu');
+				$('body').removeClass('fs-no-scroll');
+			}
+		}
+	});
+
+	$(document).on('click', '.overlay', function () {
+		$('body').removeClass('open-menu');
+		$('body').removeClass('fs-no-scroll');
 	});
 
 	inputHolder();
@@ -224,22 +240,31 @@ function scrollTnc() {
 }
 
 var isPlaying = false;
-var countClick = 3;
+var countClick = 2;
 
 function actionClickToShake() {
 	$(document).on('click', '.tree__pic, .but__shake--tree', function () {
-		if (countClick >= 0) {
-			countClick--;
-			$('.tree__pic_img').shake();
-			console.log(countClick);
-		} else {
+		// countClick--;
+		// if (countClick > 0) {
+		// 	$('.tree__pic_img').shake();
+		// 	console.log(countClick);
+		// } else {
+		// 	$('.modal').addClass('active');
+		// 	$('.tree__pic_img').addClass('no-action-tree');
+		// 	$('.but__shake--tree').addClass('no-action');
+		// 	$('.tree__pic').addClass('no-action');
+		// 	$('.popup-overlay').fadeOut();
+		// 	countClick = 2;
+		// }
+		$('.tree__pic_img').shake();
+		setTimeout(function () {
+			playAudioGold();
 			$('.modal').addClass('active');
 			$('.tree__pic_img').addClass('no-action-tree');
 			$('.but__shake--tree').addClass('no-action');
 			$('.tree__pic').addClass('no-action');
 			$('.popup-overlay').fadeOut();
-			countClick = 3;
-		}
+		}, 500)
 	});
 }
 
@@ -326,7 +351,12 @@ function playAudioBackground() {
 	var audio = document.getElementById("mp3__background");
 	audio.play();
 	audio.loop = true;
-	audio.volume = 0.6;
+	audio.volume = 0.3;
+}
+
+function playAudioGold() {
+	var audioGold = document.getElementById("mp3__gold");
+	audioGold.play();
 }
 
 // Variables for Scroll

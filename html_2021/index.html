@@ -35,10 +35,13 @@
 
 </head>
 
-<body data-page="trang-chu">
+<body>
     <div class="audio__hidden">
         <audio id="mp3__background">
             <source src="audio/demo.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="mp3__gold">
+            <source src="audio/gold.mp3" type="audio/mpeg">
         </audio>
     </div>
     <div class="fs-loading" style="position:fixed;left:0;top:0;right:0;bottom:0;background:#fff;z-index:1000"></div>
@@ -47,6 +50,11 @@
         <!-- Header -->
         <header class="fs-header">
             <div class="header-inr">
+                <span class="overlay fs-sp"></span>
+                <a href="index.html" class="fs-pic logo_header">
+                    <img src="images/logo.png" alt="Trung Sơn">
+                </a>
+
                 <div class="nav">
                     <ul>
                         <li class="nav__rungcay" data-nav=".fs-banner">
@@ -54,12 +62,14 @@
                                 <img class="pic__menu nav__pic--default" src="images/nav/rung-cay.png" alt="rung cây">
                                 <img class="pic__menu nav__pic--active" src="images/nav/rung-cay-active.png"
                                     alt="rung cây">
+                                Click rung cây
                             </a>
                         </li>
                         <li class="nav__the-le" data-nav=".box-tnc">
                             <a class="nav__pic fs-pic" href="javascript:void(0);">
                                 <img class="pic__menu nav__pic--default" src="images/nav/the-le.png" alt="Thể lệ">
                                 <img class="pic__menu nav__pic--active" src="images/nav/the-le-active.png" alt="Thể lệ">
+                                Thể lệ
                             </a>
                         </li>
                         <li class="nav__danh-sach" data-nav=".box-prize">
@@ -68,6 +78,7 @@
                                     alt="Danh sách trúng giải">
                                 <img class="pic__menu nav__pic--active" src="images/nav/danh-sach-active.png"
                                     alt="Danh sách trúng giải">
+                                Danh sách trúng giải
                             </a>
                         </li>
                         <li class="nav__san-pham" data-nav=".fs-product">
@@ -76,6 +87,7 @@
                                     alt="Sản phẩm khuyến mãi">
                                 <img class="pic__menu nav__pic--active" src="images/nav/san-pham-active.png"
                                     alt="Sản phẩm khuyến mãi">
+                                Sản phẩm khuyến mãi
                             </a>
                         </li>
                         <li class="nav__lien-he" data-nav=".fs-footer">
@@ -83,10 +95,13 @@
                                 <img class="pic__menu nav__pic--default" src="images/nav/lien-he.png" alt="liên hệ">
                                 <img class="pic__menu nav__pic--active" src="images/nav/lien-he-active.png"
                                     alt="liên hệ">
+                                Liên hệ
                             </a>
                         </li>
                     </ul>
                 </div>
+
+                <div class="nav__but fs-sp"></div>
             </div>
         </header>
 
@@ -100,19 +115,7 @@
                             <img class="fs-sp" src="images/banner-sp.jpg" alt="Click Rung Cây">
                         </div>
                     </div>
-                    <div class="hotline__box">
-                        <div class="item__hotline tel__hotline">
-                            <a class="fs-pic" href="tel:+1800558898">
-                                <img src="images/hotline.png" alt="1800558898">
-                            </a>
-                        </div>
-                        <div class="item__hotline store__hotline">
-                            <a class="fs-pic" href="javascript:void(0);">
-                                <img src="images/store.png" alt="Cửa hàng gần bạn">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- add class is-form vào form-inr nếu nhập xong ô input nhập mã hoá đơn -->
+
                     <div class="box-form">
                         <div class="form-inr">
                             <div class="box-input-user">
@@ -902,18 +905,43 @@
         </footer>
         <!--/Footer-->
 
+        <!-- Facibox -->
+        <div class="faci__box">
+            <div class="hotline__box">
+                <div class="item__hotline tel__hotline">
+                    <a class="fs-pic" href="tel:+1800558898">
+                        <img src="images/hotline.png" alt="1800558898">
+                    </a>
+                </div>
+                <div class="item__hotline store__hotline">
+                    <a class="fs-pic" href="javascript:void(0);">
+                        <img src="images/store.png" alt="Cửa hàng gần bạn">
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!--Popup-->
         <div class="popup-overlay"></div>
         <!--/Popup-->
 
         <!-- pop game -->
-        <div class="modal">
+        <!-- Khi nào trúng giải bình thường thì add class win__prize vào modal / Khi nào trúng vàng thì add class gold__win vào modal / 
+            Còn không trúng gì (chúc bạn may mắn lần sau) thì không add class gì vào hết -->
+        <div class="modal win__prize">
             <div class="modal_inr">
                 <div class="close-modal"><img src="images/icon-close.png" alt="Close"></div>
                 <div class="fs-box">
                     <div class="fs-pic prize__pic">
-                        <img class="fs-pc" src="images/prize/chuc-may-man.png" alt="trúng quà">
-                        <img class="fs-sp" src="images/prize/chuc-may-man-sp.png" alt="trúng quà">
+                        <img class="fs-pc" src="images/prize/5k-trung-son.png" alt="trúng quà">
+                        <img class="fs-sp" src="images/prize/5k-trung-son-sp.png" alt="trúng quà">
+                    </div>
+                    <div class="win__brief">
+                        <span class="code__win">TRUNGSON5K</span>
+                        <div class="note__win">Nhớ lưu voucher để sử dụng trong lần mua hàng tiếp theo nhé</div>
+                    </div>
+                    <div class="gold__brief">
+                        <div class="gold__txt">Liên hệ Fanpage Trung Sơn Pharma để nhận phần quà của bạn nhé</div>
                     </div>
                 </div>
             </div>

@@ -168,29 +168,6 @@
     padding-top: 74.19354%;
 }
 
-.hotline__box{
-    position: absolute;
-    top: 3%;
-    right: 1%;
-    display: flex;
-    width: 34.20289%;
-    background: url(../images/bg_hotline.png) no-repeat center center;
-    background-size: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3% 1%;
-    z-index: 2;
-}
-.item__hotline{
-    flex: 0 0 49%;
-    max-width: 49%;
-    margin: 0 2%;
-}
-.store__hotline{
-    flex: 0 0 43%;
-    max-width: 43%;
-}
-
 .pt__banner{
     position: absolute;
     display: block;
@@ -1008,11 +985,33 @@
     opacity: 0.5;
 }
 
+/* Faci BOx */
+.faci__box {
+    position: fixed;
+    bottom: 1.04166vw;
+    right: 1.5625vw;
+    width: auto;
+    height: auto;
+    z-index: 12;
+    text-align: right;
+}
+.hotline__box{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+.item__hotline {
+    display: inline-block;
+    margin-bottom: 1vw;
+    width: 15vw;
+}
+.item__hotline:last-child {
+    margin-bottom: 0;
+}
+
 
 @media screen and (max-width: 1389px){
-    .banner-inr {
-        max-width: 110rem;
-    }
     .box-input-code h2 {
         font-size: 1.2rem;
     }
@@ -1058,14 +1057,10 @@
 
     /* Section slider */
     .slider-inr {
-        max-width: 110rem;
         padding-bottom: 1.5rem;
     }
 
     /* Section product */
-    .product-inr {
-        max-width: 110rem;
-    }
     .fs-title {
         margin-bottom: 2.5rem;
     }
@@ -1123,21 +1118,36 @@
     }
 
     /* Section rank */
-    .rank-inr {
-        max-width: 110rem;
-    }
     .content-tnc p {
         font-size: 1.4rem;
         color: #000;
     }
     .box-scroll-tnc {
-        max-height: 30rem;
+        max-height: 38rem;
     }
 
 
     /* Table */
     .table__body {
-        max-height: 25.4rem;
+        max-height: 30.4rem;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .table__body {
+        max-height: 28rem;
+    }
+    .box-scroll-tnc {
+        max-height: 35rem;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .table__body {
+        max-height: 25rem;
+    }
+    .box-scroll-tnc {
+        max-height: 33rem;
     }
 }
 
@@ -1147,7 +1157,7 @@
         top: auto;
         left: auto;
         width: 100%;
-        padding: 15% 5% 0 5%;
+        padding: 5% 5% 0 5%;
         -webkit-transform: none;
         transform: none;
         background: url(../images/bg-form-sp.jpg) repeat-y center center;
@@ -1442,11 +1452,6 @@
 
 
     /* Hotline */
-    .hotline__box {
-        top: 4%;
-        right: 3%;
-        width: 65%;
-    }
     .banner-inr {
         display: flex;
         flex-direction: column-reverse;
@@ -1576,4 +1581,15 @@
         width: 72.1159%;
         margin: 0 auto 3vw auto;
     }
+
+    /* Faci BOx */
+    .faci__box {
+        bottom: 3vw;
+        right: 3vw;
+    }
+    .item__hotline {
+        margin-bottom: 1.5vw;
+        width: 37vw;
+    }
+ 
 }

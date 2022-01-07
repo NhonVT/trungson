@@ -1,6 +1,6 @@
 jQuery.fn.shake = function (intShakes, intDistance, intDuration) {
-    intShakes = intShakes || 6;
-    intDistance = intDistance || 8;
+    intShakes = intShakes || 15;
+    intDistance = intDistance || 10;
     intDuration = intDuration || 400;
 
     this.each(function () {

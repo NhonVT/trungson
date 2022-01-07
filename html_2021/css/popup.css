@@ -612,6 +612,59 @@
     left: 42%;
 }	
 
+.win__brief, .gold__brief{
+	display: none;
+}
+.win__prize .win__brief, .gold__win .gold__brief{
+	display: block;
+}
+.code__win{
+	position: absolute;
+    display: block;
+    bottom: 9%;
+    left: 54%;
+    width: 26%;
+	font-size: 0.9vw;
+    color: #fff;
+    font-family: 'San Francisco Text';
+    font-weight: bold;
+    font-style: normal;
+    background-color: #d21e00;
+    padding: 0.3% 0;
+    text-align: center;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.note__win{
+	position: absolute;
+    display: block;
+    bottom: 2.8%;
+	left: 42%;
+    font-size: 0.7vw;
+    color: #fff;
+    font-family: 'San Francisco Text';
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.2;
+}
+.gold__txt{
+	position: absolute;
+    display: block;
+    top: 3%;
+    left: 0;
+    width: 100%;
+    font-size: 1vw;
+    color: #fff;
+    font-family: 'San Francisco Text';
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.2;
+	z-index: 3;
+}
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -958,6 +1011,23 @@
 	/*  */
 	.tnc__pop {
 		width: 96%;
+	}
+
+	.gold__txt {
+		top: 3%;
+		font-size: 2.5vw;
+	}
+	.code__win{
+		bottom: 2vw;
+		left: 31vw;
+		width: 33vw;
+		font-size: 3vw;
+	}
+	.note__win {
+		bottom: -5vw;
+		left: 0;
+		font-size: 2.8vw;
+		width: 100%;
 	}
 } 
 
