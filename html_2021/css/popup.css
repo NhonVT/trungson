@@ -954,6 +954,11 @@
 		-webkit-transform: translate(0,0) scale(1);
 		transform: translate(-8px,0) scale(1);
 	}
+
+	/*  */
+	.tnc__pop {
+		width: 96%;
+	}
 } 
 
 
