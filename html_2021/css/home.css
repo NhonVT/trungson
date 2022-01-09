@@ -892,6 +892,7 @@
     font-size: 1.6rem;
     color: #000;
     margin-bottom: 1.2%;
+    font-weight: 600;
 }
 .content-tnc p a{
     color: #3AA7FC;
@@ -900,6 +901,19 @@
     position: relative;
     display: block;
     margin-bottom: 1.2%;
+}
+.content-tnc .color__green{
+    color: #38761d;
+}
+.content-tnc .color__organe{
+    color: #ff9900;
+}
+.content-tnc .small__title {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 2.2%;
 }
 .table-tnc ul {
     position: relative;
@@ -1122,6 +1136,9 @@
         font-size: 1.4rem;
         color: #000;
     }
+    .content-tnc .small__title {
+        font-size: 2rem;
+    }
     .box-scroll-tnc {
         max-height: 38rem;
     }
@@ -1315,6 +1332,9 @@
     .content-tnc {
         max-height: initial;
         padding: 4% 5%;
+    }
+    .content-tnc .small__title{
+        font-size: 4vw;
     }
     .content-tnc p {
         font-size: 3vw;

@@ -347,6 +347,14 @@ function fsSlider() {
 
 }
 
+function setNumberUser(number) {
+	for (var i = 0; i < number.length; i++) {
+		var elemetNumber = number.charAt(i);
+		var elementListNumbers = `<li><span>${elemetNumber}</span></li>`;
+		$('.number__player').append(elementListNumbers);
+	}
+}
+
 function playAudioBackground() {
 	var audio = document.getElementById("mp3__background");
 	audio.play();
@@ -562,4 +570,6 @@ $(window).on('load', function () {
 		}
 	}, 3000);
 
+	// Nhập số user
+	setNumberUser('0954');
 })();
