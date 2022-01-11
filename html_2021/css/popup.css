@@ -68,7 +68,7 @@
 	top:0;
 	width:100vw;
 	height:100vh;
-	background-color:rgba(14, 76, 45, 0.8);
+	background-color:rgba(14, 76, 45, 0.85);
 	z-index:50;
 	text-align:center;
 	opacity: 0;
@@ -105,11 +105,6 @@
 	transform: translate(8%, -7%) scale(0.1);
 	-webkit-transition: transform 0.5s ease-in-out 0.1s;
 	transition: transform 0.5s ease-in-out 0.1s;
-	-webkit-user-select: none;
-	-moz-user-select: none; 
-	-ms-user-select: none; 
-	-o-user-select: none;
-	user-select: none;
 }
 .modal.active .modal_inr{
 	-webkit-transform: translate(0,0) scale(1);
@@ -634,12 +629,39 @@
     text-align: center;
 	-webkit-border-radius: 5px;
     border-radius: 5px;
+	cursor: pointer;
+	text-decoration: underline;
+	z-index: 9999;
+}
+.code__win::before{
+	content: 'Đã sao chép mã code';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #d21e00;
+	font-family: 'San Francisco Text';
+    font-weight: bold;
+    font-style: normal;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
+}
+.code__win.active::before{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: none;
+	transition: none;
 }
 .note__win{
 	position: absolute;
     display: block;
     bottom: 2.8%;
-	left: 42%;
+    left: 42.2%;
     font-size: 0.7vw;
     color: #fff;
     font-family: 'San Francisco Text';
@@ -662,6 +684,33 @@
     text-align: center;
     line-height: 1.2;
 	z-index: 3;
+}
+.link__buy{
+	position: absolute;
+    bottom: -2vw;
+    left: 50%;
+    z-index: 1;
+    font-size: 1.3vw;
+    color: #fff;
+	font-family: 'San Francisco Text';
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+	-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.note__take--gold{
+	position: absolute;
+    top: -4vw;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.3vw;
+    color: #fff;
+    font-family: 'San Francisco Text';
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
 }
 
 
@@ -1014,20 +1063,33 @@
 	}
 
 	.gold__txt {
-		top: 3%;
-		font-size: 2.5vw;
+		top: 5%;
+		font-size: 2.3vw;
+		width: 75vw;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.code__win{
-		bottom: 2vw;
-		left: 31vw;
-		width: 33vw;
-		font-size: 3vw;
+		bottom: -3vw;
+		left: 50%;
+		width: 50vw;
+		font-size: 4.3vw;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 	.note__win {
-		bottom: -5vw;
+		bottom: -9vw;
 		left: 0;
 		font-size: 2.8vw;
 		width: 100%;
+	}
+	.link__buy {
+		bottom: -17vw;
+		font-size: 3.8vw;
+	}
+	.note__take--gold {
+		top: -10vw;
+		font-size: 3vw;
 	}
 } 
 

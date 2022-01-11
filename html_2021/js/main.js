@@ -200,6 +200,24 @@ function fsEvent() {
 	// scrollResult();
 	// scrollTnc();
 	actionClickToShake();
+
+	$(document).on('click touch', '.code__win', function () {
+		var codeCopy = document.getElementById('code__win');
+		copyCode(codeCopy);
+		$('.code__win').addClass('active');
+		setTimeout(function () {
+			$('.code__win').removeClass('active');
+		}, 700)
+	});
+
+}
+
+function copyCode(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
+	$temp.remove();
 }
 
 
@@ -257,6 +275,9 @@ function actionClickToShake() {
 		// 	countClick = 2;
 		// }
 		$('.tree__pic_img').shake();
+		$('.tree__pic_img').addClass('none-active');
+		$('.but__shake--tree').addClass('none-active');
+		$('.tree__pic ').addClass('none-active');
 		setTimeout(function () {
 			playAudioGold();
 			$('.modal').addClass('active');
@@ -264,6 +285,9 @@ function actionClickToShake() {
 			$('.but__shake--tree').addClass('no-action');
 			$('.tree__pic').addClass('no-action');
 			$('.popup-overlay').fadeOut();
+			$('.tree__pic_img').removeClass('none-active');
+			$('.but__shake--tree').removeClass('none-active');
+			$('.tree__pic ').removeClass('none-active');
 		}, 500)
 	});
 }
@@ -321,10 +345,10 @@ function fsSlider() {
 			watchOverflow: true,
 			slidesPerView: 1,
 			slidesPerGroup: 1,
-			// autoplay: {
-			// 	delay: 3000,
-			// 	disableOnInteraction: false,
-			// },
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
 			on: {
 				init: function () {
 				}, transitionStart: function () {

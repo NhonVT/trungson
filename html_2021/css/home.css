@@ -432,6 +432,7 @@
     font-family: 'San Francisco Text';
     font-weight: bold;
     font-style: normal;
+    text-transform: uppercase;
 }
 .info-product p{
     font-size: 1.4rem;
@@ -997,6 +998,10 @@
 .no-action{
     pointer-events: none !important;
     opacity: 0.5;
+}
+
+.none-active{
+    pointer-events: none !important;
 }
 
 /* Faci BOx */
