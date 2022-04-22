@@ -160,7 +160,7 @@ function fsEvent() {
 
 	$('.nav li').on('click', function () {
 		var target = $(this).attr('data-nav');
-		var offetTop = $(target).offset().top - 200;
+		var offetTop = $(target).offset().top - 250;
 		$('html, body').animate({ scrollTop: offetTop }, 800);
 		if (window.innerWidth < 1100) {
 			if ($('body').hasClass('open-menu')) {
@@ -303,6 +303,12 @@ function fsSlider() {
 				delay: 5000,
 				disableOnInteraction: false,
 			},
+			breakpoints: {
+				1100: {
+				  slidesPerView: 3,
+				  spaceBetween: 20
+				},
+			},
 			on: {
 				init: function () {
 				}, transitionStart: function () {
@@ -358,12 +364,18 @@ function fsSlider() {
 			loop: loop,
 			speed: 800,
 			watchOverflow: true,
-			slidesPerView: 6,
-			slidesPerGroup: 3,
+			slidesPerView: 5,
+			slidesPerGroup: 1,
 			spaceBetween: 50,
 			autoplay: {
 				delay: 5000,
 				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1100: {
+				  slidesPerView: 3,
+				  spaceBetween: 30
+				},
 			},
 			on: {
 				init: function () {
@@ -382,9 +394,14 @@ function fsSlider() {
 	}
 
 	if ($('.slider__province-box').length) {
+		var loop = true;
+		if ($('.slider__province-box .swiper-slide').length < 3) {
+			$('.slider__province-box').addClass('hide-controls');
+			loop = false;
+		}
 		new Swiper('.province-swiper', {
 			effect: 'slide',
-			loop: true,
+			loop: loop,
 			speed: 800,
 			watchOverflow: true,
 			slidesPerView: 3,
@@ -393,6 +410,13 @@ function fsSlider() {
 			autoplay: {
 				delay: 5000,
 				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1100: {
+				  slidesPerView: 1,
+				  slidesPerGroup: 1,
+				  spaceBetween: 10
+				},
 			},
 			on: {
 				init: function () {
