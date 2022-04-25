@@ -241,6 +241,26 @@
     position: relative;
     flex: 0 0 36%;
 }
+.icon__video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: auto;
+    background: url(../images/btn-play.png) no-repeat center center;
+    background-size: 100% auto;
+    cursor: pointer;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.icon__video::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+}
 
 /* fund */
 .fund-box{
@@ -1917,8 +1937,44 @@
     .slogan__trungson h2 {
         font-size: 4vw;
     }
+    .province-title {
+        margin-bottom: 6vw;
+    }
+    .adv__31, .province-title p, .text__province h3 {
+        font-size: 4vw;
+    }
+    .province-inr{
+        padding: 0 4%;
+    }
+    .list__province {
+        width: 100%;
+        margin: 0 auto 3vw auto;
+        flex-wrap: wrap;
+    }
+    .item__province {
+        flex: 0 0 48%;
+        margin-bottom: 7%;
+    }
+    .but__province .view-more {
+        width: 36vw;
+        height: 8vw;
+        line-height: 7.2vw;
+        font-size: 3.2vw;
+    }
+    .province-title h2{
+        font-size: 4.5vw;
+    }
 
-
+    /* thankyou */
+    .fs-thankyou-box {
+        display: block;
+    }
+    .thankyou-title {
+        margin-bottom: 8vw;
+    }
+    .thankyou-left {
+        margin-bottom: 5vw;
+    }
    
 }
 

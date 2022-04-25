@@ -108,6 +108,9 @@ sup{
 	font-family: 'Montserrat';
 	font-weight: 700;
 }
+.flex__align--center{
+	align-items: center;
+}
 
 
 /*LAYOUT COMMON*/
@@ -1281,13 +1284,13 @@ sup{
 
 	/* Page input */
 	.fs-group {
-		margin-bottom: 2vw;
+		margin-bottom: 3vw;
 	}
 	.fs-group input[type='text'], .fs-group input[type='email'], .fs-group input[type='number'], .fs-group input[type='password'] {
 		height: 10.6666vw;
 		line-height: 10.666vw;
-		font-size: 5.3333vw;
-		padding: 0 2vw;
+		font-size: 3.5vw;
+		padding: 0 3.5vw;
 		-webkit-border-radius: 1.333vw;
 		border-radius: 1.333vw;
 	}

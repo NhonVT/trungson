@@ -32,6 +32,7 @@
     <link href="css/layout-detail.css" rel="stylesheet" type="text/css">
     <link href="css/home.css" rel="stylesheet" type="text/css">
     <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <link href="css/popup-video.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -172,7 +173,7 @@
                 </div>
             </div>
 
-            <!-- <div class="fs-section fs-scroll fs-thankyou" data-id="empty">
+            <div class="fs-section fs-scroll fs-thankyou" data-id="empty">
                 <div class="fs-inr thankyou-inr bg__green">
                     <div class="fs-thankyou-box">
                         <div class="thankyou-left">
@@ -190,10 +191,11 @@
                             <div class="fs-pic">
                                 <img src="images/thankyou/thumbnail-video.png" alt="Chung tay phủ Xanh Miền Tây">
                             </div>
+                            <div class="icon__video play-but" data-video="UTnyopenEAs"></div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="fs-section fs-scroll fs-fund" data-id="empty">
                 <div class="fs-inr fund-inr bg__green">
@@ -310,7 +312,7 @@
                         <div class="item__adv">
                             <p class="adv__25">Tiết kiệm hơn khi sử dụng</p>
                             <p class="adv__31">Ví tiền hậu mãi</p>
-                            <p class="adv__25">Với giá <span class="color-yellow adv__51">19.000</span> <span
+                            <p class="adv__25">Với giá <span class="color-yellow adv__51">10.000</span> <span
                                     class="color-yellow adv__31">Đ</span> </p>
                         </div>
                     </div>
@@ -462,8 +464,10 @@
                         </div>
                     </div>
                     <div class="buts__exchange">
-                        <a href="javascript:void(0);" class="but-exchange fill-orange">Đổi quà</a>
-                        <a href="javascript:void(0);" class="but-exchange fill-green">Kiểm tra điểm</a>
+                        <a href="javascript:void(0);" class="but-exchange fill-orange open-popup"
+                            data-href="popup-form.html">Đổi quà</a>
+                        <a href="javascript:void(0);" class="but-exchange fill-green open-popup"
+                            data-href="popup-history.html">Kiểm tra điểm</a>
                     </div>
                 </div>
             </div>
@@ -724,6 +728,7 @@
                                 <li>3</li>
                             </ul>
                         </div>
+                        <!-- Button Xem Thêm -->
                         <div class="but__province search__map">
                             <a class="but-exchange fill-orange"
                                 href="https://trungsoncare.com/collections/san-pham-khuyen-mai#quick-view-product"
@@ -741,51 +746,60 @@
                     <div class="box-tnc">
                         <div class="box-scroll-tnc">
                             <div class="content-tnc">
-                                <div class="small__title color__green">CHƯƠNG TRÌNH <br>“TỰ HÀO PHỦ XANH MIỀN TÂY”<br>
-                                </div>
-                                <!-- <p class="fs-pic" style="text-align: center;"><img src="images/tnc_pic.jpg"
-                                        alt="“TỰ HÀO PHỦ XANH MIỀN TÂY”">
-                                </p> -->
-                                <p>Trung Sơn Pharma hân hạnh đồng hành cùng Bộ Tài Nguyên Môi Trường nhằm chung tay gây
-                                    quỹ mầm xanh trồng 1 hecta cây xanh tại rừng Trà Vinh. Trung Sơn Pharma tin rằng,
-                                    một Việt Nam xanh sẽ được tạo nên từ những trái tim nhỏ giàu tình yêu thiên nhiên.
+                                <div class="small__title color__green">CHƯƠNG TRÌNH <br>“TỰ HÀO PHỦ XANH MIỀN TÂY”</div>
+
+                                <p><i>Chương trình “Trung Sơn Tự Hào Phủ Xanh Miền Tây” là hoạt động nhằm chào đón sự
+                                        kiện
+                                        Trung Sơn Pharma sẽ có mặt tại 13 tỉnh miền Tây, tiếp tục hành trình chăm sóc
+                                        sức
+                                        khỏe cho cộng đồng, đặc biệt là bà con miền Tây. Trong hoạt động này, ngoài các
+                                        chương trình khuyến mãi tri ân tại gần 120 nhà thuốc và kênh online của hệ
+                                        thống,
+                                        Trung Sơn Pharma đã phối hợp với nhà văn Nguyễn Ngọc Tư để cho ra đời bộ 9 túi
+                                        vải
+                                        môi trường mang tên “Hơi Thở Cửu Long”, với mong muốn bước đầu khuyến khích
+                                        người
+                                        dân sử dụng túi vải môi trường trong mua sắm, hạn chế sử dụng túi nilon nhằm bảo
+                                        vệ
+                                        môi trường.</i></p>
+                                <p><i>Cũng từ hoạt động này, Trung Sơn cho ra đời: <br>- Ví điểm xanh: cho khách hàng
+                                        thành viên của Trung Sơn, khi mua sắm và sử dụng túi vải môi trường này tại hệ
+                                        thống. Ví điểm xanh này độc lập hoàn toàn với ví điểm thành viên của khách. Khi
+                                        tích đủ điểm xanh, khách hàng có thể sử dụng để đổi quà xanh tương ứng từ Trung
+                                        Sơn Pharma <br>- Quỹ mầm xanh: Điểm xanh được tích luỹ vào ví điểm xanh cho
+                                        khách hàng Trung Sơn sẽ được cộng đồng thời vào quỹ. Quy đổi tương ứng: 1 điểm
+                                        xanh = 1.000đ. Trung Sơn sẽ trích ngân sách tương ứng để phối hợp các ban ngành
+                                        trồng cây xanh khắp Mekong. Tối đa ngân sách sử dụng: 500.000 điểm/năm.
+                                        Bất cứ ai cũng có thể tham gia gieo mầm phủ xanh Miền Tây, từ những hành động
+                                        đơn giản nhất.
+                                    </i></p>
+                                <p>Cách thức sở hữu Túi vải môi trường Hơi Thở Mekong: <br>1. Mua tại bất kỳ Nhà Thuốc
+                                    Trung Sơn nào 39k/túi. <br>Trường hợp bạn đã là thành viên Trung Sơn, khi mua
+                                    hàng với bill từ 250k, bạn có
+                                    thể: <br>2. Mua túi với giá 19k (giảm 20k). <br>Hoặc: 3. Đổi điểm thành viên tương
+                                    ứng 10k/túi (giảm 29k)
                                 </p>
-                                <p>Bất cứ ai cũng có thể tham gia gieo mầm phủ xanh Miền Tây, từ những hành động đơn
-                                    giản nhất</p>
-                                <p class="color__organe">I. CƠ CẤU QUÀ XANH</p>
-                                <p>Danh sách quà tặng áp dụng trong thời gian 20/04/2022 – 20/05/2022, bao gồm: <br>1.
-                                    Ly thủy tinh Faroson <br>2. Bình nhựa NattoEnzym <br>3. Túi nhân sinh Trung Sơn
-                                    Pharma <br>4. Nhân sâm Welson <br>5. Áo mưa Trung Sơn Pharma <br>6. Nón bảo hiểm
-                                    Trung Sơn Pharma <br>7. Hộp uống BEYOU Royal Collagen</p>
-                                <p class="color__organe">II. TÊN CHƯƠNG TRÌNH: TRUNG SƠN PHARMA – TỰ HÀO PHỦ XANH MIỀN
-                                    TÂY</p>
-                                <p>Lưu ý: Khách hàng có thể theo dõi được điểm tích lũy cá nhân, thông tin chi tiết về
-                                    điểm xanh, và số cây xanh đã được trồng tại trực tiếp của chương trình.</p>
-                                <p><span class="color__organe">III. THỜI GIAN THAM GIA:</span> chương trình diễn ra từ
-                                    ngày 20/04/2022 – 20/05/2022</p>
-                                <p class="color__organe">IV. ĐỐI TƯỢNG THAM GIA:</p>
-                                <p>Tất cả khách hàng có quốc tịch Việt Nam từ 18 tuổi trở lên trong thời gian diễn ra
-                                    chương trình.</p>
-                                <p class="color__organe">V. CÁCH THỨC THAM GIA:</p>
+                                <p class="color__organe">I. CÁCH THỨC SỬ DỤNG TÚI MÔI TRƯỜNG MUA SẮM VÀ TÍCH ĐIỂM:</p>
                                 <p>- Bước 1: Khách hàng mua hàng tại nhà thuốc Trung Sơn bất kỳ, có sử dụng túi vải môi
-                                    trường (bắt buộc) sẽ được tích luỹ điểm xanh trên hệ thống Trung Sơn Pharma theo số
-                                    điện thoại. <br>- Bước 2: Điểm xanh đã tích luỹ sẽ được quy đổi vào thành Quà xanh &
+                                    trường (bắt buộc) sẽ được tích lũy điểm xanh trên hệ thống Trung Sơn Pharma theo số
+                                    điện thoại. <br>- Bước 2: Điểm xanh đã tích lũy sẽ được quy đổi vào thành Quà xanh &
                                     góp vào quỹ mầm xanh “Tự Hào Phủ Xanh Miền Tây”. <br>- Bước 3: Đến nhà thuốc Trung
                                     Sơn và đổi quà mua trực tiếp tại nhà thuốc thông qua số điện thoại và tên khách
                                     hàng.</p>
-                                <p><strong>*Lưu ý: </strong> <br>- Mỗi đơn hàng hợp lệ từ 1.000 đồng <br>- Khi khách
-                                    hàng không dùng Điểm Xanh đổi
-                                    quà, tổng số điểm sẽ được góp vào quỹ mầm xanh “Tự Hào Phủ Xanh Miền Tây”</p>
-                                <p class="color__organe">VI. CÁCH THỨC ĐỔI QUÀ:</p>
+                                <p><strong>*Lưu ý: </strong> <br>- Mỗi đơn hàng hợp lệ từ 1.000 đồng <br>- Trung Sơn
+                                    Pharma được quyền kiểm tra điểm xanh được tích lũy để đảm bảo tính minh bạch cho
+                                    chương trình.</p>
+                                <p class="color__organe">I. CÁCH THỨC ĐỔI QUÀ:</p>
                                 <p>- Số điện thoại cần cung cấp chính xác vì đây là kênh thông tin để BTC xác nhận và
                                     trao quà trực tiếp với người tham gia tại nhà thuốc. <br>- Người tham gia sẽ được
                                     BTC toàn quyền sử dụng hình ảnh này cho mục đích truyền thông mà không cần phải
-                                    thông báo trước. <br>- Khách hàng không có số điện thoại tích điểm xanh (mua tự do
-                                    và có kèm theo túi) thì số điểm sẽ được tích lũy vào quỹ mầm xanh chung.</p>
-                                <p><strong>* Thời hạn kết thúc đổi quà:</strong> <br>- Trong vòng 01 ngày kể từ khi BTC
+                                    thông báo trước. <br>Khách hàng không có số điện thoại tích điểm xanh (mua tự do và
+                                    có kèm theo túi) thì không được tích điểm xanh, do không có định danh để tích luỹ và
+                                    theo dõi đổi quà. </p>
+                                <p><strong>* Thời hạn kết thúc đổi quà:</strong> <br>- Trong vòng 30 ngày kể từ khi BTC
                                     công bố kết thúc chương trình. Quá thời hạn này nếu như khách hàng không đến đổi quà
                                     trực tiếp tại nhà thuốc BTC thì phần quà sẽ được xử lý theo quyết định của BTC.</p>
-                                <p class="color__organe">VII. THỂ LỆ CHUNG:</p>
+                                <p class="color__organe">III. THỂ LỆ CHUNG:</p>
                                 <p>- Thời gian tham gia chương trình hợp lệ là từ 00:00 ngày 20/04/2022 – 20/05/2022 .
                                     BTC không giải quyết bất kỳ trường hợp nào nằm ngoài khung giờ này. <br>- Trong suốt
                                     thời gian thực hiện chương trình, BTC có toàn quyền thay đổi thể lệ cuộc thi, phần
@@ -793,10 +807,10 @@
                                     trường hợp có bất kỳ tranh chấp nào phát sinh, quyết định của BTC sẽ là quyết định
                                     cuối cùng. <br>- Mỗi khách hàng được nhận nhiều quà tặng theo số điểm xanh tích lũy.
                                     <br>- Khách hàng thực hiện có thể đổi quà ở nhiều chi nhánh khác nhau thuộc hệ thống
-                                    Trung Sơn Pharma <br>- Để biết thêm thông tin hoặc giải đáp thắc mắc liên quan đến
+                                    Trung Sơn Pharma. <br>- Để biết thêm thông tin hoặc giải đáp thắc mắc liên quan đến
                                     cuộc thi, xin liên hệ trực tiếp BTC bằng cách gửi tin nhắn đến hộp thư của Fanpage
-                                    <a href="https://www.facebook.com/nhathuoctrungson" target="_blank">Trung Sơn
-                                        Pharma.</a>
+                                    <a href="https://facebook.com/nhathuoctrungson" target="_blank">Trung Sơn
+                                        Pharma</a>.
                                 </p>
                             </div>
                         </div>
@@ -806,10 +820,11 @@
 
             <div class="fs-section fs-scroll fs-province" data-id="empty">
                 <div class="fs-inr province-inr">
-                    <!-- <div class="province-title">
+                    <div class="province-title">
                         <p>Cây Của Bạn Đang Được Trồng Ở Đâu?</p>
                         <h2><span class="color-green-bold">TRUNG SƠN TRỒNG CÂY XANH</span> <span class="color-orange">Ở
-                                13 TỈNH MIỀN TÂY</span> <br><span class="color-green-light">CÙNG VỚI CÁC TỔ CHỨC ĐỊA
+                                13 TỈNH MIỀN TÂY</span> <br class="fs-pc"><span class="color-green-light">CÙNG VỚI CÁC
+                                TỔ CHỨC ĐỊA
                                 PHƯƠNG</span> </h2>
                     </div>
                     <div class="list__province">
@@ -869,46 +884,46 @@
                                 <a class="view-more" href="javascript:void(0);">Tìm hiểu thêm</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="slider__province-box">
                         <div class="province__slider">
                             <div class="province-swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <!-- <a href="javascript:void(0);"> -->
-                                        <div class="fs-pic pic__store-trungson">
-                                            <img src="images/province/store_province.jpg"
-                                                alt="Tưng bừng khai trương Nhà thuốc">
-                                        </div>
-                                        <div class="txt__store">
-                                            <p class="color-green-bold">Tưng bừng khai trương Nhà thuốc</p>
-                                            <p>Trung Sơn - TPHCM 2 tại Quận 7</p>
-                                        </div>
-                                        <!-- </a> -->
+                                        <a href="javascript:void(0);">
+                                            <div class="fs-pic pic__store-trungson">
+                                                <img src="images/province/store_province.jpg"
+                                                    alt="Tưng bừng khai trương Nhà thuốc">
+                                            </div>
+                                            <div class="txt__store">
+                                                <p class="color-green-bold">Tưng bừng khai trương Nhà thuốc</p>
+                                                <p>Trung Sơn - TPHCM 2 tại Quận 7</p>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <!-- <a href="javascript:void(0);"> -->
-                                        <div class="fs-pic pic__store-trungson">
-                                            <img src="images/province/store_province-2.jpg"
-                                                alt="Tưng bừng khai trương Nhà thuốc">
-                                        </div>
-                                        <div class="txt__store">
-                                            <p class="color-green-bold">Câu chuyện của bác sĩ miền Tây</p>
-                                            <p>Xây dựng chuỗi nhà thuốc chuẩn mực</p>
-                                        </div>
-                                        <!-- </a> -->
+                                        <a href="javascript:void(0);">
+                                            <div class="fs-pic pic__store-trungson">
+                                                <img src="images/province/store_province-2.jpg"
+                                                    alt="Tưng bừng khai trương Nhà thuốc">
+                                            </div>
+                                            <div class="txt__store">
+                                                <p class="color-green-bold">Câu chuyện của bác sĩ miền Tây</p>
+                                                <p>Xây dựng chuỗi nhà thuốc chuẩn mực</p>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <!-- <a href="javascript:void(0);"> -->
-                                        <div class="fs-pic pic__store-trungson">
-                                            <img src="images/province/store_province-3.jpg"
-                                                alt="Tưng bừng khai trương Nhà thuốc">
-                                        </div>
-                                        <div class="txt__store">
-                                            <p class="color-green-bold">Nhạy bén từ trực tiếp</p>
-                                            <p>Đến trực tuyến vì khách hàng</p>
-                                        </div>
-                                        <!-- </a> -->
+                                        <a href="javascript:void(0);">
+                                            <div class="fs-pic pic__store-trungson">
+                                                <img src="images/province/store_province-3.jpg"
+                                                    alt="Tưng bừng khai trương Nhà thuốc">
+                                            </div>
+                                            <div class="txt__store">
+                                                <p class="color-green-bold">Nhạy bén từ trực tiếp</p>
+                                                <p>Đến trực tuyến vì khách hàng</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -924,7 +939,6 @@
                         <h2>TRUNG SƠN - TỰ HÀO PHỦ XANH MIỀN TÂY</h2>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -971,6 +985,16 @@
         <!--Popup-->
         <div class="popup-overlay"></div>
         <!--/Popup-->
+
+        <!--Video-->
+        <div class="modal" id="videoModal">
+            <div class="overlay-popup-video"></div>
+            <div class="modal-inr">
+                <div class="close-modal"></div>
+                <iframe id="genVideo" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--Video-->
     </div>
 
     <script src="js/jquery-min.js"></script>

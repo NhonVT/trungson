@@ -34,15 +34,27 @@ function popupLoad(url, isOpen) {
 			if ($('.popup-overlay').css('display') == 'block') {
 				setTimeout(function () {
 					isLoading = true;
-					if ($('.boxScroll').length) {
-						scrollPopUp();
+					// if ($('.boxScroll').length) {
+					// 	scrollPopUp();
+					// }
+					if($('.pop__exchange').length){
+						swiperGift();
+					}
+					if($('.pop__history').length){
+						swiperHistory();
 					}
 				}, 300);
 			} else {
 				$('.popup-overlay').fadeIn(500, function () {
 					isLoading = true;
-					if ($('.boxScroll').length) {
-						scrollPopUp();
+					// if ($('.boxScroll').length) {
+					// 	scrollPopUp();
+					// }
+					if($('.pop__exchange').length){
+						swiperGift();
+					}
+					if($('.pop__history').length){
+						swiperHistory();
 					}
 				});
 			}
@@ -50,6 +62,9 @@ function popupLoad(url, isOpen) {
 	});
 
 }
+
+// swiperGift();
+// swiperHistory();
 
 function includeHTML() {
 	var z, i, elmnt, file, xhttp;
@@ -170,6 +185,39 @@ function fsEvent() {
 		}
 	});
 
+	$(document).on('click', '.but-gift', function(){
+		var that = $(this);
+		if(that.hasClass('active')){
+			that.removeClass('active');
+		}else{
+			that.addClass('active');
+		}
+	});
+
+	// Open video
+	var videoId = '',
+		video = null;
+	$(document).on('click', '.play-but' , function (e) {
+		e.preventDefault();
+		$('body').addClass('open-modal');
+		videoId = $(this).attr('data-video');
+		if (videoId) {
+			video = document.getElementById('genVideo');
+			video.src = 'https://www.youtube.com/embed/' + videoId + '?rel=0&amp;autoplay=1&amp;playsinline=1';
+		}
+		$('.modal').stop().animate({ 'opacity': 1 }, 300, 'linear', function () { });
+	});
+
+	// Close video
+	$(document).on('click', '.close-modal, .overlay-popup-video', function (e) {
+		e.preventDefault();
+		if (videoId) {
+			video.src = "";
+			videoId = null;
+		}
+		$('body').removeClass('open-modal');
+		$('.modal').stop().animate({ 'opacity': 0 }, 300, 'linear', function () { });
+	});
 }
 
 
@@ -434,6 +482,96 @@ function fsSlider() {
 		});
 	}
 
+	
+
+}
+
+var sliderGift = null,
+	sliderHistory = null;
+
+function swiperGift(){
+	var slider = $('.swiper-gift');
+	var sliderWrap = $('.slider__gift');
+	if ($('.slider__gift').length) {
+		sliderWrap.each(function(){
+			if ($(this).find('.swiper-slide').length <= 3) {
+				$(this).addClass('hide-controls');
+			}
+		});
+		slider.each(function(index, el){
+			new Swiper(this, {
+				effect: 'slide',
+				loop: false,
+				speed: 800,
+				watchOverflow: true,
+				slidesPerView: 3,
+				slidesPerGroup: 1,
+				spaceBetween: 10,
+				breakpoints: {
+					1100: {
+					  slidesPerView: 2,
+					  slidesPerGroup: 1,
+					},
+				},
+				on: {
+					init: function () {
+					}, transitionStart: function () {
+					}, transitionEnd: function () {
+					}
+				},
+				navigation: {
+					nextEl: $(this).parent().find('.swiper-button-next'),
+					prevEl: $(this).parent().find('.swiper-button-prev'),
+				},
+				a11y: {
+					enabled: false
+				}
+			});
+		})
+	}
+}
+
+function swiperHistory(){
+	var slider = $('.gift-history');
+	var sliderWrap = $('.slider__gift--history');
+	if ($('.slider__gift--history').length) {
+		sliderWrap.each(function(){
+			if ($(this).find('.swiper-slide').length <= 5) {
+				$(this).addClass('hide-controls');
+			}
+		});
+		slider.each(function(index, el){
+			new Swiper(this, {
+				effect: 'slide',
+				loop: false,
+				speed: 800,
+				watchOverflow: true,
+				slidesPerView: 5,
+				slidesPerGroup: 1,
+				spaceBetween: 0,
+				breakpoints: {
+					1100: {
+					  slidesPerView: 3,
+					  slidesPerGroup: 1,
+					  spaceBetween: 10
+					},
+				},
+				on: {
+					init: function () {
+					}, transitionStart: function () {
+					}, transitionEnd: function () {
+					}
+				},
+				navigation: {
+					nextEl: $(this).parent().find('.swiper-button-next'),
+					prevEl: $(this).parent().find('.swiper-button-prev'),
+				},
+				a11y: {
+					enabled: false
+				}
+			});
+		})
+	}
 }
 
 
@@ -652,6 +790,7 @@ $(window).on('load', function () {
 
 	fsSlider();
 	fsEvent();
+
 
 	setTimeout(function () {
 		if (loading) {
