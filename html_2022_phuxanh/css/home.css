@@ -25,7 +25,25 @@
 .banner-box .swiper-pagination-bullet-active::before {
     background-color: #5DEDAB;
 }
-
+.icon-exchange{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 9.33823%;
+    height: auto;
+    background: url(../images/icon-exchange.png);
+    background-size: 100% auto;
+    z-index: 1;
+    cursor: pointer;
+}
+.icon-exchange::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 75.5905%;
+}
 
 /* journeys */
 .journeys-box{
